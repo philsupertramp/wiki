@@ -16,7 +16,7 @@ class Post(models.Model):
 	text = models.TextField()
 	created_date = models.DateTimeField(default=timezone.now)
 	published_date = models.DateTimeField(blank=True, null=True)
-	tags = Tag
+	tags = models.ManyToManyField(Tag)
 
 	def publish(self):
 		self.published_date=timezone.now()
