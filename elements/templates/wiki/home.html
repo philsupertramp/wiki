@@ -1,0 +1,12 @@
+{% extends 'wiki/base.html' %}
+
+{% block content%}
+{% if user.is_authenticated %}
+    <p>Welcome, {{ user.username }}. Thanks for logging in.</p>
+{% else %}
+    <p>Welcome, new user. Please <a href="/login/">log in</a>.</p>
+{% endif %}
+
+
+<a href="/post/new/" > HIER </a>
+{% endblock %}
