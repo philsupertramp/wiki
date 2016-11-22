@@ -1,4 +1,4 @@
-client_encoding='UTF-8'
+#-*- coding: utf-8 -*-
 """
 Django settings for wiki project.
 
