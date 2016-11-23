@@ -41,7 +41,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'elements',
-    'tinymce',
+    'django_summernote',
 )
 
 MIDDLEWARE_CLASSES = (

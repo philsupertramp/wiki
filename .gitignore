@@ -1,6 +1,7 @@
-*.pyc
+*[.pyc]
 __pycache__
-myenv
+wikienv
 db.sqlite3
 /static
 .DS_Store
+/migrations

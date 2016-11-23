@@ -1,9 +1,13 @@
 from django import forms
 from .models import Post, Tag
-from tinymce.widgets import TinyMCE
+from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
 
 class PostForm(forms.ModelForm):
-	text = forms.CharField(widget=TinyMCE(attrs={'cols': 80, 'rowns': 30}))
+
 	class Meta:
 		model = Post
 		fields = ('title', 'text','tags',)
+		widgets = {
+			'text': SummernoteInplaceWidget(),
+			'tag': SummernoteWidget(),
+		}

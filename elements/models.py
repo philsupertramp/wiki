@@ -1,5 +1,5 @@
 from django.db import models
-from tinymce.models import HTMLField
+from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
 from django.utils import timezone
 # Create your models here.
 
@@ -24,3 +24,4 @@ class Post(models.Model):
 	
 	def __str__(self):
 		return self.title
+
