@@ -8,16 +8,16 @@ from .forms import PostForm
 # Create your views here.
 
 def home(request):
-	return render(request, 'wiki/home.html', {})
+    return render(request, 'wiki/home.html', {})
 
 def post_list(request):
-	posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-	return render(request, 'elements/post_list.html', {'posts': posts})
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'elements/post_list.html', {'posts': posts})
 
 
 def post_detail(request, pk):
-	post = get_object_or_404(Post, pk=pk)
-	return render(request, 'elements/post_detail.html', {'post':post})
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, 'elements/post_detail.html', {'post':post})
 
 
 @login_required(login_url='/login/')
@@ -29,11 +29,10 @@ def post_new(request):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return render('post_detail', pk=post.pk)
+            return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm()
-    return render(request, 'elements/post_edit.html', 
-{'form':form})
+    return render(request, 'elements/post_edit.html', {'form':form})
 
 
 @login_required(login_url='/login/')
@@ -51,11 +50,21 @@ def post_edit(request, pk):
         form = PostForm(instance=post)
     return render(request, 'elements/post_edit.html', {'form': form})
 
+def post_delete(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    if request.method == "GET":
+        post.delete()
+        return redirect("post_list")
+    else:
+        form = PostForm()
+    context ={'form': form, 'delete': False}
+    return render(request, 'post/post_edit.html', context)
+
 
 def logout_view(request):
-	logout(request)
-	return render(request, 'wiki/home.html', {})
+    logout(request)
+    return render(request, 'wiki/home.html', {})
 
 def login_view(request):
-	form = AuthenticationForm(instance=post)
-	return render(request, 'registration/login.html', {'form': form})
+    form = AuthenticationForm(instance=post)
+    return render(request, 'registration/login.html', {'form': form})
