@@ -1,6 +1,5 @@
 from django import forms
 from .models import Post, Tag
-from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
 
 class PostForm(forms.ModelForm):
 
