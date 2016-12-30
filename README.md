@@ -1,10 +1,7 @@
-pip install django-crispy-forms
-pip install psycopg2
-pip install django-ckeditor
 
-# Project Title
+# Wiki
 
-One Paragraph of project description goes here
+Our company own wiki, to collect all informations. One wiki, to know everything and to fill with knowledge.
 
 ## Getting Started
 
@@ -24,7 +21,7 @@ GNU/Debian:
 # apt-get install python2
 ```
 
-2. pip:
+* pip:
 
 Arch:
 ```
@@ -36,7 +33,7 @@ GNU/Debian:
 # apt-get install python-pip
 ```
 
-3. Django itselfs in version 1.8 (LTS):
+* Django itselfs in version 1.8 (LTS):
 
 
 Arch/GNU/Debian:
@@ -45,7 +42,7 @@ Arch/GNU/Debian:
 # pip install Django==1.8
 ```
 
-4. other Django apps:
+* other Django apps:
 
 Arch/GNU/Debian:
 
@@ -56,7 +53,7 @@ Arch/GNU/Debian:
 ```
 
 (Not recommendet)
-5. Postgresql:
+* Postgresql:
 
 I'm not gonna give a full few on that, if you not want to use PostgreSQL you can change the settings.py file and run it with a sqlite3 DB, which will be described below.
 
@@ -69,7 +66,7 @@ GNU/Debian:
 # apt-get install postgresql
 ```
 
-6. nginx:
+* nginx:
 
 Arch:
 ```
@@ -80,7 +77,7 @@ GNU/Debian:
 # apt-get install nginx
 ```
 
-7. uWSGI:
+* uWSGI:
 
 Arch:
 
