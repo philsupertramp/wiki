@@ -42,6 +42,9 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'elements',
     
+    #third party programs
+    'ckeditor', #rich texteditor
+    
 )
 
 MIDDLEWARE_CLASSES = (
@@ -121,4 +124,7 @@ STATIC_URL = '/static/'
 #crispy_forms settings:
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
 CRISPY_FAIL_SILENTLY = not DEBUG
+
+#ckeditor settings
+CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
 

@@ -1,26 +1,17 @@
 from django.db import models
 from django.utils import timezone
-
+from ckeditor.fields import RichTextField
 # Create your models here.
 
 
-class Tag(models.Model):
-    tag = models.CharField(blank=True, max_length=255)
-
-
-    def delete(self,*args,**kwargs):
-        super(Tag,self).delete(*args,**kwargs)
-
-    def __str__(self):
-        return self.name
 
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=255)
-    text = models.TextField()
+    text = RichTextField()
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
-    tags = models.ManyToManyField(Tag)
+    tags = models.CharField(blank=True,null=True,max_length=55)
 
     def publish(self):
         self.published_date=timezone.now()
@@ -29,6 +20,9 @@ class Post(models.Model):
 
     def delete(self,*args, **kwargs):
         super(Post, self).delete(*args, **kwargs)
+
+    def __unicode__(self):
+        return '%s' % self.title
 
     def __str__(self):
         return self.title

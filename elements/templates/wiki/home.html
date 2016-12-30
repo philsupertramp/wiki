@@ -1,15 +1,24 @@
 {% extends 'wiki/base.html' %}
 
 {% block content%}
-{% if user.is_authenticated %}
-    <p>Welcome, {{ user.username }}. Thanks for logging in.</p>
-{% else %}
-    <p>Welcome, new user. Please <a href="/login/">log in</a>.</p>
-{% endif %}
 
-
-<h2><a href="/post/new/" > HIER entsteht ein Wiki.  </a>
-<p> auf der linken Seite wird eine Navbar mit allen Tags/Toppings stehen.</p>
-<p> in der Mitte stehen aktuelle ereignisse </p>
-</h2>
+<div class="content container">
+<div class="row">
+<div class="col-md-8">
+    {% if news %}
+        {% for post in news %}
+        
+            <div class="post">
+                <div class="date">
+                    <p>published: {{ post.published_date }}</p>
+                </div>
+                <h1><a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h1>
+            </div>
+            <div class="horizontalBorder"></div>
+        {% endfor %}
+        {%else%}
+        <p> no NEWS available</p>
+        {%endif%}
+</div>
+</div>
 {% endblock %}
