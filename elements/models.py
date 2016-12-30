@@ -5,17 +5,11 @@ from django.utils import timezone
 
 
 class Tag(models.Model):
-    name = models.CharField(max_length=50)
-    group = models.CharField(max_length=100)
-    
-    class Meta:
-        ordering=['name',]
-    
-    
-    
+    tag = models.CharField(blank=True, max_length=255)
 
-    def delete(self,*args, **kwargs):
-        super(Tag, self).delete(*args, **kwargs)
+
+    def delete(self,*args,**kwargs):
+        super(Tag,self).delete(*args,**kwargs)
 
     def __str__(self):
         return self.name
@@ -26,7 +20,7 @@ class Post(models.Model):
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
-    tags = models.ForeignKey(Tag)
+    tags = models.ManyToManyField(Tag)
 
     def publish(self):
         self.published_date=timezone.now()
