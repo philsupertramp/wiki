@@ -5,12 +5,12 @@
 <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
     <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
   <form  method="post" accept-charset="utf-8">
-    {{ form }}
+    {{ form.as_p }}
     {% csrf_token %}
     
-        <input href="{% url 'home' %}" class="btn btn-default" type="submit" value="Login" ></input>
+        <input href="{% url 'home' %}" class="btn btn-default" type="submit" value="Register" ></input>
   </form>
-  <h5> Don't got an account? Register <a href="/registration">here</a></h5>
+
   </div>
 </div>
 {% endblock %}

@@ -1,5 +1,5 @@
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth import logout, login
+from django.contrib.auth import logout, login, forms
 from django.shortcuts import render, get_object_or_404, redirect
 from django.core.urlresolvers import reverse
 from django.utils import timezone
@@ -20,7 +20,7 @@ def post_list(request):
     """
     if Post.objects.all():
        
-        posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+        posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
         return render(request, 'elements/post_list.html', {'posts': posts})
     else:
          raise Http404("No matching objects, you need to create new Post-objects.")
@@ -108,6 +108,10 @@ def logout_view(request):
     logout(request)
     return render(request, 'wiki/home.html', {})
 
+def register_view(request):
+    "registration view"
+    form = forms.UserCreationForm()
+    return render(request, 'registration/register.html',{'form':form})
 
 
 """
