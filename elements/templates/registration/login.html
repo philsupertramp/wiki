@@ -7,8 +7,11 @@
   <form  method="post" accept-charset="utf-8">
     {{ form }}
     {% csrf_token %}
+        <div class="form-group has-success"> 
+    <input type="hidden" name="next" value="{{ next }}">
     
-        <input href="{% url 'home' %}" class="btn btn-default" type="submit" value="Login" ></input>
+        <input class="btn btn-default" type="submit" value="Login" >
+    </div>
   </form>
   <h5> Don't got an account? Register <a href="/registration">here</a></h5>
   </div>

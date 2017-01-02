@@ -118,6 +118,10 @@ def register_view(request):
         GENERAL VIEWS
 """
 
+def re(request):
+    return redirect('home')
+
+
 
 def home(request):
     "index view"
