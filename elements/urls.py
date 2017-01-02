@@ -9,7 +9,7 @@ urlpatterns = [
     
     #post urls
     url(r'^post/$', views.post_list, name='post_list'),
-    url(r'^post/list/(?P<tag>\w+)/$', views.post_filter, name='post_filter'),
+    url(r'^post/list/(?P<tag>[A-Za-z0-9_-]+)/$', views.post_filter, name='post_filter'),
     url(r'^post/author/(?P<author>[A-Za-z0-9_-]+)/$', views.post_author, name='post_author'),
     url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
     url(r'^post/new/$', views.post_new, name='post_new'),

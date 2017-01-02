@@ -127,4 +127,5 @@ CRISPY_FAIL_SILENTLY = not DEBUG
 
 #ckeditor settings
 CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
+CKEDITOR_ALLOW_NONIMAGE_FILES = False
 
