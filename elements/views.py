@@ -29,6 +29,13 @@ def post_filter(request, tag):
     posts = Post.objects.filter(tags=tag)
     return render(request, 'elements/post_list.html',{'posts':posts})
 
+
+def post_author(request,author):
+    posts = Post.objects.filter(author__username=author)
+    return render(request, 'elements/post_list.html',{'posts':posts})
+
+
+
 def post_detail(request, pk):
     
     "view to detail a post"

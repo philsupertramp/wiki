@@ -12,7 +12,8 @@
                     <p>published: {{ post.published_date }}</p>
                 </div>
                 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h1>
-            <p>Tag: {{ post.tags }}</p>
+            <p>Author: <a href="/post/author/{{ post.author}}">{{post.author}}</a> | Tag: {{ post.tags }}</p>
+           
             </div>
             <div class="delete">
                 <a class="btn" href="/post/{{ post.pk}}/delete">Delete</a>
