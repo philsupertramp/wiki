@@ -110,8 +110,16 @@ def logout_view(request):
 
 def register_view(request):
     "registration view"
-    form = forms.UserCreationForm()
-    return render(request, 'registration/register.html',{'form':form})
+    if request.method == 'POST':
+        form = forms.UserCreationForm(data=request.POST)
+        if form.is_valid():
+            user = form.save()
+            return redirect('/login')
+    else:
+        form = forms.UserCreationForm()
+    return render(request, 'registration/register.html',{
+        'form': form,
+        })
 
 
 """
