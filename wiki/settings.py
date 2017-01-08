@@ -41,7 +41,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'elements',
-    
+    'user',
     #third party programs
     'ckeditor', #rich texteditor
     
@@ -129,3 +129,4 @@ CRISPY_FAIL_SILENTLY = not DEBUG
 CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
 CKEDITOR_ALLOW_NONIMAGE_FILES = False
 
+#AUTH_USER_MODEL = 'user.CustomUser'
