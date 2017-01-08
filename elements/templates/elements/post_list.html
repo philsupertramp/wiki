@@ -15,9 +15,11 @@
             <p>Author: <a href="/post/author/{{ post.author}}">{{post.author}}</a> | Tag: {{ post.tags }}</p>
            
             </div>
+            {% if user.is_authenticated %}
             <div class="delete">
                 <a class="btn" href="/post/{{ post.pk}}/delete">Delete</a>
             </div>
+            {% endif %}
             <div class="horizontalBorder"></div>
         {% endfor %}
         {%else%}
