@@ -18,8 +18,13 @@
                 <a>Welcome, {{ user.username }}. Thanks for logging in.
                 <a href="/logout" style="font-size: 12pt; color: #ffffff;">Logout</a></a>
         {% else %}
+<<<<<<< HEAD
                 <a>Welcome, new user. Please log in.
                 <a href="/login" style="font-size: 12pt; color: #ffffff;">Login</a></a>
+=======
+                <p>Welcome, new user. Please log in.</p>
+                <a href="/login">Login</a>
+>>>>>>> 63a7270528238e0b6feb105c1aed259118a4b583
         {% endif %}
 
       {%if user.is_authenticated %}
