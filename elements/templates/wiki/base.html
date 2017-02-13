@@ -15,12 +15,11 @@
     <div class="page-header">
     
         {% if user.is_authenticated %}
-                <a>Welcome, {{ user.username }}. Thanks for logging in.</a>
-                <a href="/logout"><h6 style="text-decoration: none;">Logout</h6></a>
+                <a>Welcome, {{ user.username }}. Thanks for logging in.
+                <a href="/logout" style="font-size: 12pt; color: #ffffff;">Logout</a></a>
         {% else %}
-                <p>Welcome, new user. Please log in.</p>
-                <h6><a href="/login">Login</a></h6>
-                <a href="/login">Login</a>
+                <a>Welcome, new user. Please log in.
+                <a href="/login" style="font-size: 12pt; color: #ffffff;">Login</a></a>
         {% endif %}
 
       {%if user.is_authenticated %}
@@ -34,13 +33,13 @@
             <table class="table">
                     
                         <tr><h3 style="color: #dc7b01;"> Tags</h3></tr> 
-                        <tr><h4><a1 href="/post/list/Python/">Python</a1></h4></tr> 
-                        <tr><h4><a1 href="/post/list/Django/">Django</a1></h4></tr> 
-                        <tr><h4><a1 href="/post/list/LaTeX/">LaTeX</a1></h4></tr> 
-                        <tr><h4><a1 href="/post/list/cpp/">C++</a1></h4></tr> 
-                        <tr><h4><a1 href="/post/list/HTML/">HTML</a1></h4></tr> 
-                        <tr><h4><a1 href="/post/list/Other">Other</a1></h4></tr>
-                        <tr><h4><a1 href="/post/">All</a1></h4></tr>
+                        <tr><h4><a href="/post/list/Python/">Python</a></h4></tr> 
+                        <tr><h4><a href="/post/list/Django/">Django</a></h4></tr> 
+                        <tr><h4><a href="/post/list/LaTeX/">LaTeX</a></h4></tr> 
+                        <tr><h4><a href="/post/list/cpp/">C++</a></h4></tr> 
+                        <tr><h4><a href="/post/list/HTML/">HTML</a></h4></tr> 
+                        <tr><h4><a href="/post/list/Other">Other</a></h4></tr>
+                        <tr><h4><a href="/post/">All</a></h4></tr>
                    
                 </table>
             </div>

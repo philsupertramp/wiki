@@ -1,6 +1,6 @@
 /* Textstyles  */
 h1, h2, h3, h4 {
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Droid', sans-serif;
 }
 
 a1{
@@ -8,7 +8,7 @@ a1{
 }
 
 a{
-	
+	text-decoration: none;
     color: #02c39a;
 	font-size: 11pt;
 }
@@ -128,12 +128,4 @@ body {
 	display: flex;
 	flex-flow: row;
 	height: auto;
-}
-.spacer {
-  flex: auto;
-  background-color: yellow;
-}
-.centered-element {
-  flex: none;
-  background-color: white;
 }
