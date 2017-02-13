@@ -1,7 +1,28 @@
-.page-header {
-    background-color: #2f4550;
-    margin-top: 0;
-    padding: 5px 20px 20px 40px;
+/* Textstyles  */
+h1, h2, h3, h4 {
+    font-family: 'Arimo', sans-serif;
+}
+
+a1{
+	font-size: 11pt;
+}
+
+a{
+	
+    color: #02c39a;
+	font-size: 11pt;
+}
+
+.post h1 a, .post h1 a:visited {
+    color: #000000;
+}
+
+.date {
+    color: #828282;
+}
+
+page-header {
+	font: 2em ;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -9,22 +30,40 @@
     font-size: 36pt;
     text-decoration: none;
 }
+h6{
+	margin-top: 0%;
+	margin-bottom: 0%;
+	color: #02c39a;
+	font-size: 11pt;
+	text-decoration: none;
+}
+
+.post-form{
+	font: "DejaVu Sans";
+}
+/* Site elements  */
+
+body {
+	font: dejavu-sans;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+.page-header {
+    background-color: #2f4550;
+    margin-top: 0;
+    padding: 5px 40px 10px 40px;
+}
+
+
 
 .content {
     margin-left: 40px;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Arimo', sans-serif;
-}
 
-a{
-    color: #02c39a
-}
-
-.date {
-    color: #828282;
-}
 
 .save {
     float: right;
@@ -37,7 +76,7 @@ a{
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #ffffff;
     float: right;
-    font-size: 26pt;
+    font-size: 22pt;
     margin-right: 20px;
 }
 
@@ -45,13 +84,12 @@ a{
     margin-bottom: 70px;
 }
 
-.post h1 a, .post h1 a:visited {
-    color: #000000;
-}
+
 
 .verticalLine {
         border-left: thick solid #ff0000;
 }
+
 .horizontalBorder {
     display: block;
     margin-top: 0.5em;
@@ -60,4 +98,42 @@ a{
     margin-right: auto;
     border-style: inset;
     border-width: 1px;
+}
+
+
+/* grid system  */
+
+.vertical-box {
+  display: flex;
+  height: auto;
+  width: 100%;
+  columns: 2;
+  
+}
+
+
+.content-box {
+  border: 10px solid #000000;
+  columns:3;
+}
+
+.horizontal-box {
+	margin-left: 10%;
+	display: flex;
+	flex-flow: row;
+	width: auto;
+}
+.horizontal-box1 {
+	margin-left: 20px;
+	display: flex;
+	flex-flow: row;
+	height: auto;
+}
+.spacer {
+  flex: auto;
+  background-color: yellow;
+}
+.centered-element {
+  flex: none;
+  background-color: white;
 }

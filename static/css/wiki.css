@@ -1,3 +1,9 @@
+.page-header{
+	padding-bottom:9px;
+	margin:40px 0 20px;
+	border-bottom:1px solid #eee
+}
+
 .page-header {
     background-color: #2f4550;
     margin-top: 0;
@@ -12,6 +18,21 @@
 
 .content {
     margin-left: 40px;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+	font-family:inherit;
+	font-weight:500;
+	line-height:1.1;
+	color:inherit
+}
+
+body{
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:14px;
+	line-height:1.42857143;
+	color:#333;
+	background-color:#fff;
 }
 
 h1, h2, h3, h4 {

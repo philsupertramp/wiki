@@ -2,9 +2,9 @@
 <!doctype html>
     <head>
         <title>TimeDev Wiki</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+       <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+       <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'> -->
         <link rel="stylesheet" href="{% static 'css/wiki.css' %}">
         <script type="text/javascript" src="{% static 'ckeditor/ckeditor/ckeditor.js' %}"></script>
         <script type="text/javascript" src="{% static 'ckeditor/ckeditor-init.js' %}"></script>
@@ -15,11 +15,11 @@
     <div class="page-header">
     
         {% if user.is_authenticated %}
-                <h6>Welcome, {{ user.username }}. Thanks for logging in.</h6>
-                <a href="/logout">Logout</a>
+                <a>Welcome, {{ user.username }}. Thanks for logging in.</a>
+                <a href="/logout"><h6 style="text-decoration: none;">Logout</h6></a>
         {% else %}
                 <p>Welcome, new user. Please log in.</p>
-                <a href="/login">Login</a>
+                <h6><a href="/login">Login</a></h6>
         {% endif %}
 
       {%if user.is_authenticated %}
@@ -28,29 +28,29 @@
       {%endif%}
         <h1><a href="/">TimeDev wiki</a></h1>
     </div>
-    <div class="container content">
-        <div class="row">
-            <div class="col-xs-2 col-sm-3 col-md-2 col-lg-2">
-                <table class="table">
+    <div class="vertical-box">
+        <div style="margin-left: 5%;">
+            <table class="table">
                     
                         <tr><h3 style="color: #dc7b01;"> Tags</h3></tr> 
-                        <tr><h4><a href="/post/list/Python/">Python</a></h4></tr> 
-                        <tr><h4><a href="/post/list/Django/">Django</a></h4></tr> 
-                        <tr><h4><a href="/post/list/LaTeX/">LaTeX</a></h4></tr> 
-                        <tr><h4><a href="/post/list/cpp/">C++</a></h4></tr> 
-                        <tr><h4><a href="/post/list/HTML/">HTML</a></h4></tr> 
-                        <tr><h4><a href="/post/list/Other">Other</a></h4></tr>
-                        <tr><h4><a href="/post/">All</a></h4></tr>
+                        <tr><h4><a1 href="/post/list/Python/">Python</a1></h4></tr> 
+                        <tr><h4><a1 href="/post/list/Django/">Django</a1></h4></tr> 
+                        <tr><h4><a1 href="/post/list/LaTeX/">LaTeX</a1></h4></tr> 
+                        <tr><h4><a1 href="/post/list/cpp/">C++</a1></h4></tr> 
+                        <tr><h4><a1 href="/post/list/HTML/">HTML</a1></h4></tr> 
+                        <tr><h4><a1 href="/post/list/Other">Other</a1></h4></tr>
+                        <tr><h4><a1 href="/post/">All</a1></h4></tr>
                    
                 </table>
             </div>
-            
-            <div class="col-xs-9 col-sm-8 col-md-9 col-lg-9">
+            <div class="horizontal-box" style="margin-top: 20px;">
             {% block content %}
             {% endblock %}
             </div>
-        </div>
+         
     </div>
+    </div>
+    
 </body>
 
 </html>
