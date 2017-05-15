@@ -25,8 +25,8 @@ def post_list(request):
     else:
          raise Http404("No matching objects, you need to create new Post-objects.")
 
-def post_filter(request, tag):
-    posts = Post.objects.filter(tags=tag)
+def post_filter(request, string):
+    posts = Post.objects.filter(tags=string)
     return render(request, 'elements/post_list.html',{'posts':posts})
 
 

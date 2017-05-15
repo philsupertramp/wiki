@@ -2,38 +2,29 @@
 from __future__ import unicode_literals
 
 from django.db import models, migrations
-from django.conf import settings
+import ckeditor.fields
 import django.utils.timezone
+from django.conf import settings
 
 
 class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
+        ('tags', '0001_initial'),
     ]
 
     operations = [
         migrations.CreateModel(
             name='Post',
             fields=[
-                ('id', models.AutoField(primary_key=True, verbose_name='ID', auto_created=True, serialize=False)),
+                ('id', models.AutoField(verbose_name='ID', primary_key=True, serialize=False, auto_created=True)),
                 ('title', models.CharField(max_length=255)),
-                ('text', models.TextField()),
+                ('text', ckeditor.fields.RichTextField()),
                 ('created_date', models.DateTimeField(default=django.utils.timezone.now)),
                 ('published_date', models.DateTimeField(blank=True, null=True)),
                 ('author', models.ForeignKey(to=settings.AUTH_USER_MODEL)),
+                ('tags', models.ForeignKey(null=True, to='tags.Tag')),
             ],
-        ),
-        migrations.CreateModel(
-            name='Tag',
-            fields=[
-                ('id', models.AutoField(primary_key=True, verbose_name='ID', auto_created=True, serialize=False)),
-                ('tag', models.CharField(default=None, max_length=255)),
-            ],
-        ),
-        migrations.AddField(
-            model_name='post',
-            name='tags',
-            field=models.ManyToManyField(to='elements.Tag'),
         ),
     ]

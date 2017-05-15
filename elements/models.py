@@ -2,7 +2,7 @@ from django.db import models
 from django.utils import timezone
 from ckeditor.fields import RichTextField
 # Create your models here.
-
+from tags.models import Tag
 
 
 class Post(models.Model):
@@ -11,7 +11,7 @@ class Post(models.Model):
     text = RichTextField()
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
-    tags = models.CharField(blank=True,null=True,max_length=55)
+    tags = models.ForeignKey(Tag, null=True)
 
     def publish(self):
         self.published_date=timezone.now()

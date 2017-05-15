@@ -1,0 +1,27 @@
+{% extends 'wiki/base.html' %}
+
+{% block content %}
+<div class="content container">
+<div class="row">
+<div class="col-md-8">
+    {% if tags %}
+        {% for post in tags %}
+        
+            <div class="post">
+                <div class="date">
+                    <p>published: {{ post.published_date }}</p>
+                </div>
+                <h1><a href="{% url 'tags_detail' string=post.name %}">{{post.name}}</a></h1>
+            
+            </div>
+            
+            <div class="horizontalBorder"></div>
+        {% endfor %}
+        {%else%}
+        <p> no Posts available</p>
+        {%endif%}
+</div>
+</div>
+
+{% endblock %}
+        
