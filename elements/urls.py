@@ -6,7 +6,7 @@ urlpatterns = [
     #general urls
     url(r'^$', views.home, name='home'),
     
-	url(r'^tags/', include('tags.urls')),
+    
     
     #post urls
     url(r'^post/$', views.post_list, name='post_list'),
