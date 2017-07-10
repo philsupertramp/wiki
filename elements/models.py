@@ -4,12 +4,14 @@ from ckeditor.fields import RichTextField
 # Create your models here.
 
 
+
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=255)
     text = RichTextField()
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
+    tags = models.CharField(max_length=55)
 
     def publish(self):
         self.published_date=timezone.now()
