@@ -42,7 +42,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'elements',
     'user',
-    'tags',
     #third party programs
     'ckeditor', #rich texteditor
     
