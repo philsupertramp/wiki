@@ -28,6 +28,9 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
 	'.time-dev.de',
+	'localhost',
+    '127.0.0.1',
+    '[::1]',
 	]
 
 
@@ -63,7 +66,7 @@ ROOT_URLCONF = 'wiki.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['static/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
