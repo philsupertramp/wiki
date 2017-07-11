@@ -15,11 +15,11 @@
     <div class="page-header">
     
         {% if user.is_authenticated %}
-                <a>Welcome, {{ user.username }}. Thanks for logging in.
-                <a href="/logout" style="font-size: 12pt; color: #ffffff;">Logout</a></a>
+                <a>Welcome, {{ user.username }}. Thanks for logging in.</a>
+                <a href="/logout" style="font-size: 12pt; color: #ffffff;">Logout</a>
         {% else %}
-                <a>Welcome, new user. Please log in.
-                <a href="/login" style="font-size: 12pt; color: #ffffff;">Login</a></a>
+                <a>Welcome, new user. Please log in.</a>
+                <a href="/login" style="font-size: 12pt; color: #ffffff;">Login</a>
         {% endif %}
 
       {%if user.is_authenticated %}
