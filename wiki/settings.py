@@ -45,7 +45,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'elements',
-    #third party programs
+    # third party programs
+    'markdownx',
 )
 
 MIDDLEWARE_CLASSES = (
