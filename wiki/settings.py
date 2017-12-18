@@ -1,4 +1,4 @@
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """
 Django settings for wiki project.
 
@@ -27,11 +27,12 @@ SECRET_KEY = 'dse-+$8t1q*sustj)lwotnk3(5h*od+wf@9zntm_3f%vso$0t!'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-	'.time-dev.de',
-	'localhost',
+    '.time-dev.de',
+    'localhost',
+    '*',
     '127.0.0.1',
     '[::1]',
-	]
+]
 
 
 # Application definition
@@ -44,10 +45,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'elements',
-    'user',
     #third party programs
-    'ckeditor', #rich texteditor
-    
 )
 
 MIDDLEWARE_CLASSES = (
@@ -65,15 +63,15 @@ ROOT_URLCONF = 'wiki.urls'
 
 TEMPLATES = [
     {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['static/templates'],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
+    'BACKEND': 'django.template.backends.django.DjangoTemplates',
+    'DIRS': ['static/templates'],
+    'APP_DIRS': True,
+    'OPTIONS': {
+        'context_processors': [
+            'django.template.context_processors.debug',
+            'django.template.context_processors.request',
+            'django.contrib.auth.context_processors.auth',
+            'django.contrib.messages.context_processors.messages',
             ],
         },
     },
@@ -89,10 +87,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'wiki',
-	'USER': 'wiki',
-	'PASSWORD': '1i§D8]/8Xk',
-	'HOST': 'localhost',
-	'PORT': '',
+    'USER': 'postgres',
+    'PASSWORD': '',
+    'HOST': 'localhost',
+    'PORT': '',
     }
 }
 
@@ -124,12 +122,12 @@ STATIC_ROOT = os.path.join(BASE_DIR,'static')
 STATIC_URL = '/static/'
 
 
-#crispy_forms settings:
+# crispy_forms settings:
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
 CRISPY_FAIL_SILENTLY = not DEBUG
 
-#ckeditor settings
+# ckeditor settings
 CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
 CKEDITOR_ALLOW_NONIMAGE_FILES = False
 
-#AUTH_USER_MODEL = 'user.CustomUser'
+# AUTH_USER_MODEL = 'user.CustomUser'

@@ -4,3 +4,4 @@ wikienv
 db.sqlite3
 .DS_Store
 /migrations
+.idea/
