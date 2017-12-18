@@ -23,17 +23,18 @@ def post_list(request):
         posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
         return render(request, 'elements/post_list.html', {'posts': posts})
     else:
-         raise Http404("No matching objects, you need to create new Post-objects.")
+        raise Http404("No matching objects, you need to create new Post-objects.")
+
 
 def post_filter(request, string):
-    posts = Post.objects.filter(tags=string)
-    return render(request, 'elements/post_list.html',{'posts':posts})
+    posts = Post.objects.filter(tags=string).order_by('-published_date')
+
+    return render(request, 'elements/post_list.html', {'posts': posts})
 
 
 def post_author(request,author):
     posts = Post.objects.filter(author__username=author)
-    return render(request, 'elements/post_list.html',{'posts':posts})
-
+    return render(request, 'elements/post_list.html', {'posts': posts})
 
 
 def post_detail(request, pk):
@@ -41,13 +42,13 @@ def post_detail(request, pk):
     "view to detail a post"
     
     post = get_object_or_404(Post, pk=pk)
-    return render(request, 'elements/post_detail.html', {'post':post})
+    return render(request, 'elements/post_detail.html', {'post': post})
 
 
 @login_required(login_url='/login/')
 def post_new(request):
     
-    "view to create a new post"
+    """view to create a new post"""
     
     if request.method == "POST":
         form = PostForm(request.POST)
@@ -59,13 +60,13 @@ def post_new(request):
             return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm()
-    return render(request, 'elements/post_edit.html', {'form':form})
+    return render(request, 'elements/post_edit.html', {'form': form})
 
 
 @login_required(login_url='/login/')
 def post_edit(request, pk):
     
-    "view to edit a existing post"
+    """view to edit a existing post"""
     
     post = get_object_or_404(Post, pk=pk)
     if request.method == "POST":
@@ -80,9 +81,10 @@ def post_edit(request, pk):
         form = PostForm(instance=post)
     return render(request, 'elements/post_edit.html', {'form': form})
 
+
 def post_delete(request, pk):
     
-    "view to delete a post"
+    """view to delete a post"""
     
     post = get_object_or_404(Post, pk=pk)
     if request.method == "GET":
@@ -90,7 +92,7 @@ def post_delete(request, pk):
         return redirect("post_list")
     else:
         form = PostForm()
-    context ={'form': form, 'delete': False}
+    context = {'form': form, 'delete': False}
     return render(request, 'post/post_edit.html', context)
 
 
@@ -99,6 +101,7 @@ def post_delete(request, pk):
             ACCOUNTING VIEWS
 
 """
+
 
 def login_view(request):
 
@@ -115,6 +118,7 @@ def logout_view(request):
     logout(request)
     return render(request, 'wiki/home.html', {})
 
+
 def register_view(request):
     "registration view"
     if request.method == 'POST':
@@ -124,7 +128,7 @@ def register_view(request):
             return redirect('/login')
     else:
         form = forms.UserCreationForm()
-    return render(request, 'registration/register.html',{
+    return render(request, 'registration/register.html', {
         'form': form,
         })
 
@@ -133,12 +137,13 @@ def register_view(request):
         GENERAL VIEWS
 """
 
+
 def re(request):
     return redirect('home')
 
 
-
 def home(request):
-    "index view"
+    """index view"""
     news = Post.objects.filter(tags="News").order_by('published_date')
-    return render(request, 'wiki/home.html', {'news':news})
+    news = news.reverse()
+    return render(request, 'wiki/home.html', {'news': news})
