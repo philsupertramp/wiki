@@ -6,7 +6,7 @@ from markdownx.models import MarkdownxField
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=255)
-    text = models.TextField()
+    text = models.TextField(blank=True)
     content = MarkdownxField()
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
@@ -25,3 +25,8 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+
+class Tag(models.Model):
+    name = models.CharField(max_length=55)
+    group = models.ManyToManyField('Tag')
+    

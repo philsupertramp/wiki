@@ -8,5 +8,6 @@ urlpatterns = [
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'', include('elements.urls')),
+    url(r'^markdownx/', include('markdownx.urls')),
     
 ]
