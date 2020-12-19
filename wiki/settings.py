@@ -16,7 +16,6 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
@@ -34,7 +33,6 @@ ALLOWED_HOSTS = [
     '[::1]',
 ]
 
-
 # Application definition
 
 INSTALLED_APPS = (
@@ -44,35 +42,34 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'elements',
+    'elements.apps.ElementsConfig',
     # third party programs
     'markdownx',
 )
 
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.security.SecurityMiddleware',
-)
+]
 
 ROOT_URLCONF = 'wiki.urls'
 
 TEMPLATES = [
     {
-    'BACKEND': 'django.template.backends.django.DjangoTemplates',
-    'DIRS': ['static/templates'],
-    'APP_DIRS': True,
-    'OPTIONS': {
-        'context_processors': [
-            'django.template.context_processors.debug',
-            'django.template.context_processors.request',
-            'django.contrib.auth.context_processors.auth',
-            'django.contrib.messages.context_processors.messages',
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': ['static/templates'],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
             ],
         },
     },
@@ -80,21 +77,14 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'wiki.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'wiki',
-    'USER': 'postgres',
-    'PASSWORD': '',
-    'HOST': 'localhost',
-    'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'wiki.sqlite3',
     }
 }
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
@@ -111,17 +101,16 @@ USE_TZ = False
 
 client_encoding = 'UTF-8'
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 import os
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-STATIC_ROOT = os.path.join(BASE_DIR,'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
-
 
 # crispy_forms settings:
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
@@ -132,3 +121,5 @@ CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.j
 CKEDITOR_ALLOW_NONIMAGE_FILES = False
 
 # AUTH_USER_MODEL = 'user.CustomUser'
+
+LOGIN_REDIRECT_URL = '/'

@@ -4,7 +4,7 @@ from markdownx.models import MarkdownxField
 
 
 class Post(models.Model):
-    author = models.ForeignKey('auth.User')
+    author = models.ForeignKey('auth.User', on_delete=models.SET_NULL, null=True)
     title = models.CharField(max_length=255)
     text = models.TextField(blank=True)
     content = MarkdownxField()
@@ -16,9 +16,6 @@ class Post(models.Model):
         self.published_date = timezone.now()
         self.save()
 
-    def delete(self, *args, **kwargs):
-        super(Post, self).delete(*args, **kwargs)
-
     def __unicode__(self):
         return '%s' % self.title
 
@@ -26,7 +23,16 @@ class Post(models.Model):
         return self.title
 
 
+class TagGroup(models.Model):
+    name = models.CharField(max_length=255, unique=True)
+
+    def __str__(self):
+        return f'Tag group: {self.name}'
+
+
 class Tag(models.Model):
     name = models.CharField(max_length=55)
-    group = models.ManyToManyField('Tag')
-    
+    group = models.ForeignKey('TagGroup', related_name='tags', on_delete=models.SET_NULL, null=True)
+
+    def __str__(self):
+        return f'{self.group.name if self.group else ""}: {self.name}'
