@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 from django.test import TestCase
 from django.urls import reverse
 
-from elements.models import Post
+from elements.models import Post, Tag
 
 
 class PostTestCase(TestCase):
@@ -42,7 +42,9 @@ class PostTestCase(TestCase):
 
     @mock.patch('elements.helpers.render')
     def test_filter(self, render_mock):
-        pass
+        tag = Tag.objects.create(name='C++')
+        post = Post.objects.create(author=self.user, tag=tag, )
+        url = reverse('post_filter', kwargs={'string': ''})
 
     def test_filter_author(self):
         pass

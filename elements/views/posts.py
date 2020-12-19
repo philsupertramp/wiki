@@ -16,7 +16,7 @@ def post_list(request):
 
 
 def post_filter(request, string):
-    posts = Post.objects.filter(tags=string).order_by('-published_date')
+    posts = Post.objects.filter(tags__name=string).order_by('-published_date')
 
     return render_with_tags(request, 'elements/post_list.html', {'posts': posts})
 
@@ -38,7 +38,13 @@ def post_new(request):
     """view to create a new post"""
 
     if request.method == "POST":
-        form = PostForm(request.POST)
+        data = {
+            'text': request.POST.get('content'),
+            'content': request.POST.get('content'),
+            'title': request.POST.get('title'),
+            'tags': list(request.POST.get('tags'))
+        }
+        form = PostForm(data)
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
@@ -56,11 +62,16 @@ def post_edit(request, pk):
 
     post = get_object_or_404(Post, pk=pk)
     if request.method == "POST":
-        form = PostForm(request.POST, instance=post)
+        data = {
+            'text': request.POST.get('content'),
+            'content': request.POST.get('content'),
+            'title': request.POST.get('title'),
+            'tags': list(request.POST.get('tags'))
+        }
+        form = PostForm(data, instance=post)
         if form.is_valid():
-            post = form.save(commit=False)
-            post.author = request.user
-            post.published_date = timezone.now()
+            post = form.save(commit=True)
+            post.edit_date = timezone.now()
             post.save()
             return redirect('post_detail', pk=post.pk)
     else:

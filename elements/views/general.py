@@ -10,6 +10,6 @@ def re(request):
 
 def home(request):
     """index view"""
-    news = Post.objects.filter(tags="News").order_by('published_date')
+    news = Post.objects.filter(tags__name__icontains="News").order_by('published_date')
     news = news.reverse()
     return render_with_tags(request, 'wiki/home.html', {'news': news})
