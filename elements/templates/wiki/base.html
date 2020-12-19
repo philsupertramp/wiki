@@ -33,7 +33,7 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">			
 				<ul class="nav navbar-nav navbar-right">
 					{% if user.is_authenticated %}
-					<li><a  class="btn btn-info btn-xs" href="/post/new/" role="button"  ><span class="glyphicon glyphicon-plus" ></span></a></li>
+					<li><a  class="btn btn-info btn-xs" href="/posts/new/" role="button"  ><span class="glyphicon glyphicon-plus" ></span></a></li>
 					<li><a href="/accounts/logout" style="font-size: 12pt; color: #ffffff;">Logout</a></li>
 					{% else %}
 					<li><a href="/accounts/login" style="font-size: 12pt; color: #ffffff;">Login</a></li>
@@ -51,9 +51,9 @@
                     
 					<tr><h3 style="color: #dc7b01;"> Tags</h3></tr>
 					{% for tag in tags %}
-					<tr><h4><a href="/post/list/{{ tag.name }}">{{ tag.name }}</a></h4></tr>
+					<tr><h4><a href="/posts/list/{{ tag.name }}">{{ tag.name }}</a></h4></tr>
                    {% endfor %}
-					<tr><h4><a href="/post/">All</a></h4></tr>
+					<tr><h4><a href="/posts/">All</a></h4></tr>
 				</table>
             </div>
 		</div>

@@ -1,0 +1,83 @@
+from django.contrib.auth.decorators import login_required
+from django.shortcuts import get_object_or_404, redirect
+from django.utils import timezone
+
+from elements.forms import PostForm
+from elements.helpers import render_with_tags
+from elements.models import Post
+
+
+def post_list(request):
+    """
+    view to list all posts
+    """
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
+    return render_with_tags(request, 'elements/post_list.html', {'posts': posts})
+
+
+def post_filter(request, string):
+    posts = Post.objects.filter(tags=string).order_by('-published_date')
+
+    return render_with_tags(request, 'elements/post_list.html', {'posts': posts})
+
+
+def post_author(request, author):
+    posts = Post.objects.filter(author__username=author)
+    return render_with_tags(request, 'elements/post_list.html', {'posts': posts})
+
+
+def post_detail(request, pk):
+    "view to detail a post"
+
+    post = get_object_or_404(Post, pk=pk)
+    return render_with_tags(request, 'elements/post_detail.html', {'post': post})
+
+
+@login_required(login_url='/accounts/login/')
+def post_new(request):
+    """view to create a new post"""
+
+    if request.method == "POST":
+        form = PostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            return redirect('post_detail', pk=post.pk)
+    else:
+        form = PostForm()
+    return render_with_tags(request, 'elements/post_edit.html', {'form': form})
+
+
+@login_required(login_url='/accounts/login/')
+def post_edit(request, pk):
+    """view to edit a existing post"""
+
+    post = get_object_or_404(Post, pk=pk)
+    if request.method == "POST":
+        form = PostForm(request.POST, instance=post)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            return redirect('post_detail', pk=post.pk)
+    else:
+        form = PostForm(instance=post)
+    return render_with_tags(request, 'elements/post_edit.html', {'form': form})
+
+
+@login_required(login_url='/accounts/login')
+def post_delete(request, pk):
+    """view to delete a post"""
+
+    post = get_object_or_404(Post, pk=pk)
+    if request.method == "GET":
+        post.delete()
+        return redirect("post_list")
+    else:
+        form = PostForm()
+    context = {'form': form, 'delete': False}
+    return render_with_tags(request, 'elements/post_edit.html', context)
+

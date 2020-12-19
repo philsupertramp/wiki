@@ -1,0 +1,22 @@
+from unittest import mock
+
+from django.test import TestCase
+
+from elements.helpers import render_with_tags
+from elements.models import Tag
+
+
+class HelpersTestCase(TestCase):
+    @classmethod
+    def setUpTestData(cls):
+        super().setUpTestData()
+        cls.tag = Tag.objects.create(name='C++')
+
+    @mock.patch('elements.helpers.render')
+    def test_render_with_tags(self, render_mock):
+        render_with_tags(mock.Mock(), 'elements/post_list.html', {})
+
+        render_mock.assert_called_once()
+        self.assertIn('tags', render_mock.call_args[1]['context'])
+        self.assertIn(self.tag, render_mock.call_args[1]['context']['tags'])
+        self.assertEqual(render_mock.call_args[1]['context']['tags'].count(), 1)

@@ -10,12 +10,12 @@
 					<p>published: {{ post.published_date }}</p>
 				</div>
 				<h1><a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h1>
-				<p>Author: <a href="/post/author/{{ post.author}}">{{post.author}}</a> | Tag: {{ post.tags }}</p>
+				<p>Author: <a href="/posts/author/{{ post.author}}">{{post.author}}</a> | Tag: {{ post.tags }}</p>
 		
 			</div>
 			{% if user.is_authenticated %}
 			<div class="delete">
-				<a class="btn" href="/post/{{ post.pk}}/delete">Delete</a>
+				<a class="btn" href="/posts/{{ post.pk}}/delete">Delete</a>
 			</div>
 			{% endif %}
 			<div class="horizontalBorder"></div>

@@ -1,5 +1,5 @@
 from django import forms
-from .models import Post
+from .models import Post, Tag
 from markdownx.fields import MarkdownxFormField
 
 
@@ -9,3 +9,9 @@ class PostForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = ('title', 'text', 'tags',)
+
+
+class TagForm(forms.ModelForm):
+    class Meta:
+        model = Tag
+        fields = ('name', 'group',)
