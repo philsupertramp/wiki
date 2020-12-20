@@ -10,7 +10,16 @@
 					<p>published: {{ post.published_date }}</p>
 				</div>
 				<h1><a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h1>
-				<p>Author: <a href="/posts/author/{{ post.author}}">{{post.author}}</a> | Tag: {{ post.tags }}</p>
+				<p>
+					Author: <a href="/posts/author/{{ post.author}}">{{post.author}}</a>
+					| Tags:
+					{% for tag in post.tags.all %}
+						<a href="{% url "post_filter" string=tag.name %}">{{ tag.name }}</a>
+						{% if forloop.counter != forloop.last %}
+							,
+						{% endif %}
+					{% endfor %}
+				</p>
 		
 			</div>
 			{% if user.is_authenticated %}

@@ -42,7 +42,7 @@ def post_new(request):
             'text': request.POST.get('content'),
             'content': request.POST.get('content'),
             'title': request.POST.get('title'),
-            'tags': list(request.POST.get('tags'))
+            'tags': list(request.POST.getlist('tags'))
         }
         form = PostForm(data)
         if form.is_valid():
@@ -66,7 +66,7 @@ def post_edit(request, pk):
             'text': request.POST.get('content'),
             'content': request.POST.get('content'),
             'title': request.POST.get('title'),
-            'tags': list(request.POST.get('tags'))
+            'tags': list(request.POST.getlist('tags'))
         }
         form = PostForm(data, instance=post)
         if form.is_valid():
