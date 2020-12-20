@@ -20,10 +20,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'dse-+$8t1q*sustj)lwotnk3(5h*od+wf@9zntm_3f%vso$0t!'
+SECRET_KEY = os.environ.get('SECRET_KEY', default='XXXXX')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     '.time-dev.de',
@@ -103,8 +103,6 @@ client_encoding = 'UTF-8'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
-
-import os
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
