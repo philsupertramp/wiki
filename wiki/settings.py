@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/1.8/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.8/ref/settings/
 """
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
@@ -115,9 +116,11 @@ CRISPY_TEMPLATE_PACK = 'bootstrap3'
 CRISPY_FAIL_SILENTLY = not DEBUG
 
 # ckeditor settings
-CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
+CKEDITOR_JQUERY_URL = '/jquery.min.js'
 CKEDITOR_ALLOW_NONIMAGE_FILES = False
 
 # AUTH_USER_MODEL = 'user.CustomUser'
 
 LOGIN_REDIRECT_URL = '/'
+
+django_heroku.settings(locals())
