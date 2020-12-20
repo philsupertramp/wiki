@@ -22,7 +22,7 @@ def tag_detail(request, pk):
     return render_with_tags(request, 'tags/tag_detail.html', {'tag': tag})
 
 
-@login_required(login_url='/login/')
+@login_required()
 def tag_new(request):
     """view to create a new Tag"""
 
@@ -37,7 +37,7 @@ def tag_new(request):
     return render_with_tags(request, 'tags/tag_edit.html', {'form': form})
 
 
-@login_required(login_url='/login/')
+@login_required()
 def tag_edit(request, pk):
     """view to edit a existing Tag"""
 
@@ -53,15 +53,10 @@ def tag_edit(request, pk):
     return render_with_tags(request, 'tags/tag_edit.html', {'form': form})
 
 
+@login_required()
 def tag_delete(request, pk):
     """view to delete a Tag"""
 
     tag = get_object_or_404(Tag, pk=pk)
-    if request.method == "GET":
-        tag.delete()
-        return redirect("tag_list")
-    else:
-        form = TagForm()
-    context = {'form': form, 'delete': False}
-    return render_with_tags(request, 'tags/tag_edit.html', context)
-
+    tag.delete()
+    return redirect("tag_list")

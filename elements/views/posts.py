@@ -84,11 +84,8 @@ def post_delete(request, pk):
     """view to delete a post"""
 
     post = get_object_or_404(Post, pk=pk)
-    if request.method == "GET":
+    if request.user == post.author:
         post.delete()
         return redirect("post_list")
-    else:
-        form = PostForm()
-    context = {'form': form, 'delete': False}
-    return render_with_tags(request, 'elements/post_edit.html', context)
+    return redirect("post_list")
 

@@ -11,7 +11,7 @@
                 <div class="date">
                     <p>published: {{ post.published_date }}</p>
                 </div>
-                <h1><a href="{% url 'tags_detail' string=post.name %}">{{post.name}}</a></h1>
+                <h1><a href="{% url 'post_detail' pk=post.pk %}">{{post.name}}</a></h1>
             
             </div>
             

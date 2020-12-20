@@ -1,11 +1,5 @@
-from django.shortcuts import redirect
-
 from elements.helpers import render_with_tags
 from elements.models import Post
-
-
-def re(request):
-    return redirect('home')
 
 
 def home(request):

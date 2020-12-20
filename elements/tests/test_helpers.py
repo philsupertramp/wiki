@@ -3,7 +3,7 @@ from unittest import mock
 from django.contrib.auth.models import User, Group
 from django.test import TestCase
 
-from elements.helpers import render_with_tags
+from elements.helpers import render_with_tags, is_mod_user
 from elements.models import Tag
 
 
@@ -29,3 +29,10 @@ class HelpersTestCase(TestCase):
 
         self.assertTrue(user.is_superuser)
         self.assertTrue(user.is_staff)
+
+    def test_is_mod_user(self):
+        user = User.objects.create_user(username='foo', password='bar')
+        user.groups.add(Group.objects.create(name='Mods'))
+        user.save()
+
+        self.assertTrue(is_mod_user(user))

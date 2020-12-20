@@ -15,8 +15,7 @@ def post_m2m_changed_user(sender, instance, action, *args, **kwargs):
 
 
 def mod_user_save(sender, instance, created, *args, **kwargs):
-    field_updates = ['is_superuser', 'is_staff']
-    if created or field_updates == kwargs.get('update_fields', []):
+    if created or (kwargs.get('update_fields') and 'is_superuser' in kwargs.get('update_fields', [])):
         return
 
     mod_group = Group.objects.get_or_create(
@@ -25,4 +24,4 @@ def mod_user_save(sender, instance, created, *args, **kwargs):
     if mod_group in instance.groups.all():
         instance.is_superuser = True
         instance.is_staff = True
-        instance.save(update_fields=field_updates)
+        instance.save(update_fields=['is_superuser', 'is_staff'])

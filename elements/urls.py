@@ -14,8 +14,6 @@ urlpatterns = [
     re_path(r'^posts/(?P<pk>\d+)/delete/$', views.post_delete, name='post_delete'),
     
     # tag urls
-
-    # post urls
     path(r'tags/', views.tag_list, name='tag_list'),
     re_path(r'^tags/(?P<pk>\d+)/$', views.tag_detail, name='tag_detail'),
     path(r'tags/new/', views.tag_new, name='tag_new'),

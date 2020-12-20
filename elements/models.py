@@ -17,9 +17,6 @@ class Post(models.Model):
         self.published_date = timezone.now()
         self.save()
 
-    def __unicode__(self):
-        return '%s' % self.title
-
     def __str__(self):
         return self.title
 
@@ -36,4 +33,4 @@ class Tag(models.Model):
     group = models.ForeignKey('TagGroup', related_name='tags', on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
-        return f'{self.group.name if self.group else ""}: {self.name}'
+        return f'{self.group.name + ": " if self.group else ""}{self.name}'
