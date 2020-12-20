@@ -43,8 +43,12 @@ class PostTestCase(TestCase):
     @mock.patch('elements.helpers.render')
     def test_filter(self, render_mock):
         tag = Tag.objects.create(name='C++')
-        post = Post.objects.create(author=self.user, tag=tag, )
-        url = reverse('post_filter', kwargs={'string': ''})
+        post = Post.objects.create(author=self.user)
+        post.tags.set([tag])
+        url = reverse('post_filter', kwargs={'string': 'C++'})
+        self.client.get(url)
+        render_mock.assert_called_once()
+        self.assertEqual(render_mock.call_args[1], 'C++')
 
     def test_filter_author(self):
         pass
