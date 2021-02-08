@@ -30,9 +30,9 @@ ALLOWED_HOSTS = [
     '.time-dev.de',
     'localhost',
     '*',
-    '127.0.0.1',
+    '127.0.0.1:*',
     '[::1]',
-    '.herokuapp.com'
+    '*.herokuapp.com'
 ]
 
 # Application definition
@@ -133,3 +133,9 @@ CKEDITOR_ALLOW_NONIMAGE_FILES = False
 LOGIN_REDIRECT_URL = '/'
 
 django_heroku.settings(locals())
+
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
