@@ -44,12 +44,14 @@ def post_new(request):
             'title': request.POST.get('title'),
             'tags': list(request.POST.getlist('tags'))
         }
+        tags = [int(i) for i in list(request.POST.getlist('tags'))]
         form = PostForm(data)
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
+            post.tags.set(tags)
             return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm()
@@ -66,7 +68,7 @@ def post_edit(request, pk):
             'text': request.POST.get('content'),
             'content': request.POST.get('content'),
             'title': request.POST.get('title'),
-            'tags': list(request.POST.getlist('tags'))
+            'tags': [int(i) for i in list(request.POST.getlist('tags'))]
         }
         form = PostForm(data, instance=post)
         if form.is_valid():
