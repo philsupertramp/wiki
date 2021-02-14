@@ -30,11 +30,11 @@
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">			
 				<ul class="nav navbar-nav navbar-right">
-					{% if user.is_authenticated %}
-					<li><a  class="btn btn-info btn-xs" href="{% url "post_new" %}" role="button"  ><span class="glyphicon glyphicon-plus" ></span></a></li>
-					<li><a href="{% url "login" %}" style="font-size: 12pt; color: #ffffff;">Logout</a></li>
+					{% if not user.is_authenticated %}
+					<li><a href="{% url "login" %}" style="font-size: 12pt; color: #ffffff;">Login</a></li>
 					{% else %}
-					<li><a href="{% url "logout" %}" style="font-size: 12pt; color: #ffffff;">Login</a></li>
+					<li><a  class="btn btn-info btn-xs" href="{% url "page_create" %}" role="button"  ><span class="glyphicon glyphicon-plus" ></span></a></li>
+					<li><a href="{% url "logout" %}" style="font-size: 12pt; color: #ffffff;">Logout</a></li>
 					{% endif %}
 				</ul>
 			</div> 
@@ -46,10 +46,7 @@
 		{% if messages %}
 		<ul class="messages">
 			{% for message in messages %}
-			<li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
-				{% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Important: {% endif %}
-				{{ message }}
-			</li>
+			<li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
 			{% endfor %}
 		</ul>
 		{% endif %}

@@ -1,8 +1,7 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404, redirect, render
-from django.utils import timezone
 
-from elements.forms import PostForm, TagForm
+from elements.forms import TagForm
 from elements.helpers import render_with_tags
 from elements.models import Tag
 

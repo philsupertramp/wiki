@@ -1,0 +1,29 @@
+{% extends 'wiki/base.html' %}
+
+{% block content %}
+
+<div class="col-md-8">
+{% with page_list as pages %}
+	{% if pages %}
+		{% for page in pages %}
+			<div class="page">
+				<div class="date">
+					<p>published: {{ page.created_at }}</p>
+				</div>
+				<h1><a href="{% url 'page_detail' slug=page.slug %}">{{page.title}}</a></h1>
+				<p>
+					Author: <a href="">{{ page.author }}</a>
+				</p>
+		
+			</div>
+			<div class="horizontalBorder"></div>
+		{% endfor %}
+		{%else%}
+		<p style="margin-top: 20px;"> no Pages available</p>
+		{%endif%}
+{% endwith %}
+</div>
+
+
+{% endblock %}
+		

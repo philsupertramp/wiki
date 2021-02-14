@@ -22,5 +22,6 @@ urlpatterns = [
     
     # accounting urls
     path('accounts/', include('django.contrib.auth.urls')),
-    path('accounts/register', views.register_view, name='register_view')
+    path('accounts/register', views.register_view, name='register_view'),
+
 ]
