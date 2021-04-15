@@ -4,6 +4,5 @@ from elements.models import Post
 
 def home(request):
     """index view"""
-    news = Post.objects.filter(tags__name__icontains="News").order_by('published_date')
-    news = news.reverse()
+    news = Post.objects.all().order_by('-published_date')
     return render_with_tags(request, 'wiki/home.html', {'news': news})
