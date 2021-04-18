@@ -1,6 +1,7 @@
 from django.contrib.auth.models import User
 from django.test import TestCase
 from django.urls import reverse
+from django.utils.text import slugify
 
 from pages.models import Page
 
@@ -9,7 +10,10 @@ class PageTestCase(TestCase):
     @classmethod
     def setUpTestData(cls):
         cls.user = User.objects.create_superuser('User', password='password')
-        cls.page = Page.objects.create(author=cls.user, title='Foo Bar 123')
+        cls.page = Page.objects.create(author=cls.user, title='Foo Bar 123', content='My foo')
+
+    def test_str_representation(self):
+        self.assertEqual(str(self.page), 'Page: Foo Bar 123')
 
     def test_slug_generation(self):
         self.assertEqual(self.page.slug, 'foo-bar-123')
@@ -26,7 +30,7 @@ class PageTestCase(TestCase):
         page = Page.objects.get(pk=self.page.pk)
         self.assertEqual(page.editor, self.user)
         self.assertEqual(page.title, title)
-        self.assertEqual(page.slug, slug)
+        self.assertEqual(page.slug, slugify(slug))
 
     def test_page_creation(self):
         content = 'FOOOO'
@@ -38,6 +42,18 @@ class PageTestCase(TestCase):
 
         self.assertEqual(response.status_code, 200)
         self.assertIn(title, str(response.content))
+
+        response = self.client.post(url, data={'title': title, 'content': content}, follow=True)
+
+        self.assertEqual(response.status_code, 200)
+        self.assertIn('alert alert-danger', str(response.content))
+        self.assertIn('Slug is not unique', str(response.content))
+
+        response = self.client.post(url, data={'title': '', 'content': content}, follow=True)
+
+        self.assertEqual(response.status_code, 200)
+        self.assertIn('alert alert-danger', str(response.content))
+        self.assertIn('This field is required.', str(response.content))
 
     def test_page_listing(self):
         self.client.force_login(self.user)

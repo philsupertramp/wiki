@@ -8,5 +8,6 @@ wikienv
 staticfiles/
 
 .coverage*
+coverage*
 
 */local_settings.py
