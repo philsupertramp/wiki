@@ -1,0 +1,40 @@
+{% extends 'wiki/base.html' %}
+{% load markdown_tags %}
+
+{% block content %}
+
+<div class="col-md-8">
+	<div>
+		<div class="date">
+		   Post prior to: {{ pagehistory.created_at }}
+			<a href="{% url 'page_history' slug=pagehistory.page.slug %}">Back</a>
+		</div>
+		{% with pagehistory.state|hash:'title' as title %}
+			<h1>{{ title }}</h1>
+		{% endwith %}
+		{% with pagehistory.state|hash:'text' as text %}
+			<p>{{ text.0 | markdown_to_html | safe }}</p>
+		{% endwith %}
+	</div>
+	<hr style="border-color: black; border-width: 2px"/>
+	<div>
+		{% for key in pagehistory.field_names %}
+			{% with pagehistory.fields|hash:key as diff %}
+				<p style="font-size: 21px">
+					{{ key }}
+				</p>
+				{% with diff.0 as prev %}
+				{% with diff.1 as now %}
+					{{ prev|gen_diff:now|format_diff|safe }}
+				{% endwith %}
+				{% endwith %}
+			{% endwith %}
+			<hr/>
+		{% endfor %}
+		<p>Changed at: {{ pagehistory.created_at }}, by {{ pagehistory.initiator }}</p>
+	</div>
+</div>
+
+
+{% endblock %}
+		

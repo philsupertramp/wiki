@@ -1,9 +1,7 @@
-from django.urls import re_path, path, include
+from django.urls import re_path, path
 from . import views
 
 urlpatterns = [
-    path(r'', views.home, name='home'),
-    
     # post urls
     path(r'posts/', views.post_list, name='post_list'),
     re_path(r'^posts/list/(?P<string>[^\/]+)/$', views.post_filter, name='post_filter'),
@@ -19,9 +17,5 @@ urlpatterns = [
     path(r'tags/new/', views.tag_new, name='tag_new'),
     re_path(r'^tags/(?P<pk>\d+)/edit/$', views.tag_edit, name='tag_edit'),
     re_path(r'^tags/(?P<pk>\d+)/delete/$', views.tag_delete, name='tag_delete'),
-    
-    # accounting urls
-    path('accounts/', include('django.contrib.auth.urls')),
-    path('accounts/register', views.register_view, name='register_view'),
 
 ]

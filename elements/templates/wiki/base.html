@@ -30,11 +30,11 @@
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">			
 				<ul class="nav navbar-nav navbar-right">
-					{% if not user.is_authenticated %}
-					<li><a href="{% url "login" %}" style="font-size: 12pt; color: #ffffff;">Login</a></li>
-					{% else %}
+					{% if user.is_authenticated %}
 					<li><a  class="btn btn-info btn-xs" href="{% url "page_create" %}" role="button"  ><span class="glyphicon glyphicon-plus" ></span></a></li>
 					<li><a href="{% url "logout" %}" style="font-size: 12pt; color: #ffffff;">Logout</a></li>
+					{% else %}
+					<li><a href="{% url "login" %}" style="font-size: 12pt; color: #ffffff;">Login</a></li>
 					{% endif %}
 				</ul>
 			</div> 
@@ -53,6 +53,7 @@
 	</div>
     <div class="row">
 		<div class="col-md-3" >
+		{% comment %}
 			<div style="margin-left: 5%;">
 				<table class="table">
                     
@@ -63,6 +64,7 @@
 					<tr><h4><a href="/posts/">All</a></h4></tr>
 				</table>
             </div>
+		{% endcomment %}
 		</div>
 		
             {% block content %}

@@ -13,7 +13,8 @@ class PageTestCase(TestCase):
         cls.page = Page.objects.create(author=cls.user, title='Foo Bar 123', content='My foo')
 
     def test_str_representation(self):
-        self.assertEqual(str(self.page), 'Page: Foo Bar 123')
+        page = Page(author=self.user, title='Foo Bar')
+        self.assertEqual(str(page), 'Page: Foo Bar')
 
     def test_slug_generation(self):
         self.assertEqual(self.page.slug, 'foo-bar-123')
@@ -42,6 +43,8 @@ class PageTestCase(TestCase):
 
         self.assertEqual(response.status_code, 200)
         self.assertIn(title, str(response.content))
+        page = Page.objects.filter(title=title, content=content).first()
+        self.assertEqual(page.author_id, self.user.id)
 
         response = self.client.post(url, data={'title': title, 'content': content}, follow=True)
 
@@ -63,3 +66,30 @@ class PageTestCase(TestCase):
 
         self.assertEqual(response.status_code, 200)
         self.assertIn(self.page.title, str(response.content))
+
+    def test_page_history_listing(self):
+        self.client.force_login(self.user)
+        page = Page.objects.create(title='123', slug='___123', author=self.user)
+
+        page.title = 'New title'
+        page.save()
+
+        url = reverse('page_history', kwargs={'slug': page.slug})
+        response = self.client.get(url)
+
+        self.assertEqual(response.status_code, 200)
+        self.assertIn('title', str(response.content))
+
+    def test_page_history_detail(self):
+        self.client.force_login(self.user)
+        old_title = '123'
+        page = Page.objects.create(title=old_title, slug='___123', author=self.user)
+
+        page.title = 'New title'
+        page.save()
+
+        url = reverse('page_history_detail', kwargs={'slug': page.slug, 'pk': page.pagehistory_set.last().id})
+        response = self.client.get(url)
+
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(old_title, str(response.content))

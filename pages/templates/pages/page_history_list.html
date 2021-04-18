@@ -1,0 +1,38 @@
+{% extends 'wiki/base.html' %}
+{% load markdown_tags %}
+
+{% block content %}
+
+<div class="col-md-8">
+{% with pagehistory_list as pages %}
+	<a href="{% url 'page_detail' slug=pages.0.page.slug %}">Back to "{{ pages.0.page.title }}"</a>
+	{% if pages %}
+		{% for page in pages %}
+			<hr style="border-color: black; border-width: 2px"/>
+			<div>
+				{% for key in page.field_names %}
+					{% with page.fields|hash:key as diff %}
+						<p style="font-size: 21px">
+							{{ key }}
+						</p>
+						{% with diff.0 as prev %}
+						{% with diff.1 as now %}
+							{{ prev|gen_diff:now|format_diff|safe }}
+						{% endwith %}
+						{% endwith %}
+					{% endwith %}
+					<hr/>
+				{% endfor %}
+				<p>Changed at: {{ page.created_at }}, by {{ page.initiator }}</p>
+				<a href="{% url 'page_history_detail' slug=page.page.slug pk=page.pk %}">Detail</a>
+			</div>
+		{% endfor %}
+		{%else%}
+		<p style="margin-top: 20px;"> no Pages available</p>
+		{%endif%}
+{% endwith %}
+</div>
+
+
+{% endblock %}
+		
