@@ -1,6 +1,13 @@
 {% extends 'wiki/base.html' %}
 {% load markdown_tags %}
 
+{% block header %}
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ request.get_host }}{% url 'page_detail' slug=page.slug %}" />
+<meta property="og:description" content="{{ page.text|strip_text|shorten:50 }}">
+{% endblock %}
+
 {% block content %}
     <div class="col-md-8">
         {% if page.published_date %}
