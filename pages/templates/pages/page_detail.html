@@ -2,10 +2,18 @@
 {% load markdown_tags %}
 
 {% block header %}
+<meta name="title" content="{{ page.title }}" />
+<meta name="description" content="{{ page.text|strip_text|shorten:150 }}" />
+
 <meta property="og:title" content="{{ page.title }}" />
-<meta property="og:type" content="article" />
+<meta property="og:type" content="website" />
 <meta property="og:url" content="{{ request.get_host }}{% url 'page_detail' slug=page.slug %}" />
-<meta property="og:description" content="{{ page.text|strip_text|shorten:50 }}">
+<meta property="og:description" content="{{ page.text|strip_text|shorten:150 }}">
+
+<meta property="twitter:title" content="{{ page.title }}" />
+<meta property="twitter:type" content="website" />
+<meta property="twitter:url" content="{{ request.get_host }}{% url 'page_detail' slug=page.slug %}" />
+<meta property="twitter:description" content="{{ page.text|strip_text|shorten:150 }}">
 {% endblock %}
 
 {% block content %}
