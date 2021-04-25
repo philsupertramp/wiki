@@ -69,3 +69,9 @@ def strip_text(value):
 @register.filter
 def shorten(value, length):
     return value[:length]
+
+
+@register.filter
+def dir_val(value):
+    print(dir(value))
+    return value

@@ -1,7 +1,8 @@
 {% extends 'wiki/base.html' %}
+{% load markdown_tags %}
 
 {% block content %}
-    <div class="col-md-8">
+<div class="col-md-10 offset-md-1">
     <!--<h1>New post</h1>-->
 		<div class="post_edit">
 			<form method="POST" class="post-form">{% csrf_token %}
@@ -19,18 +20,25 @@
 						</div>
 					{% endfor %}
 				{% endif %}
-                <p style="font-size:22px;">Title:</p>
-                <p>{{ form.title }}</p>
-                <p style="font-size:22px;">Slug:</p>
-                <p>{{ form.slug }}</p>
-                <p style="font-size:22px;">Content:</p>
-                <p style="background-color:#EEEEEE">{{ form.content }}</p>
+			<div class="mb-3">
+				<label for="title">Title:</label><span>{{ form.title }}</span>
+				<label for="slug">Slug:</label>
+				<span>{{ form.slug }}</span>
+			</div>
+			<div class="mb-3">
+			  <div class="col">
+				<label for="description">Meta Description:</label>
+				<span>{{ form.description }}</span>
+			  </div>
+			</div>
+			<div class="mb-3">
+				{{ form.content }}
+			</div>
+                <button type="submit" class="save btn btn-outline-success">Save</button>
 
-                <button type="submit" class="save btn btn-default">Save</button>
 			</form>
 
 		</div>
-        <div style="padding-top:5%;">{{ form.media }}</div>
     </div>
 {% endblock %}
 

@@ -2,17 +2,22 @@ from django import forms
 from django.utils import timezone
 from django.utils.text import slugify
 from markdownx.fields import MarkdownxFormField
+from markdownx.widgets import MarkdownxWidget
 
 from pages.models import Page
 
 
+class EditMarkdownxWidget(MarkdownxWidget):
+    template_name = 'markdownx/edit-widget.html'
+
+
 class PageForm(forms.ModelForm):
-    content = MarkdownxFormField()
+    content = MarkdownxFormField(widget=EditMarkdownxWidget)
     user = None
 
     class Meta:
         model = Page
-        fields = ('title', 'slug', 'text', 'content')
+        fields = ('title', 'slug', 'text', 'content', 'description')
 
     def save(self, commit=True):
         if self.instance.pk:

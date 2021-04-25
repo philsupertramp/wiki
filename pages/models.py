@@ -31,6 +31,7 @@ class Page(CreatedAtEditedAtModel):
     )
 
     content = MarkdownxField()
+    description = models.CharField('HTML meta:description attribute', default='', max_length=100, null=True)
 
     class Meta:
         constraints = [
@@ -69,7 +70,8 @@ class Page(CreatedAtEditedAtModel):
             'title': self.title,
             'slug': self.slug,
             'is_published': self.is_published,
-            'editor_id': self.editor_id
+            'editor_id': self.editor_id,
+            'description': self.description
         }
 
     def __str__(self):

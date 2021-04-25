@@ -137,6 +137,8 @@ CKEDITOR_ALLOW_NONIMAGE_FILES = False
 
 LOGIN_REDIRECT_URL = '/'
 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 django_heroku.settings(locals())
 
 
