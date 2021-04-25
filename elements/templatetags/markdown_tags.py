@@ -52,6 +52,9 @@ def strip_text(value):
 
     # (REMOVE HTML DOCTYPE <!DOCTYPE html to > and variations)
     pattern = r'<[ ]*\![ ]*DOCTYPE.*?>'  # mach any char zero or more times
+    text = re.sub(pattern, '', text, flags=(re.IGNORECASE | re.MULTILINE | re.DOTALL))
+
+    pattern = r'\n'  # mach any char zero or more times
     value = re.sub(pattern, '', text, flags=(re.IGNORECASE | re.MULTILINE | re.DOTALL))
     cleanr = re.compile('<.*?>')
     cleantext = re.sub(cleanr, '', value)
@@ -59,7 +62,7 @@ def strip_text(value):
     cleantext = cleantext.replace('*', '')
     cleantext = cleantext.replace('_', '')
     cleantext = cleantext.replace('`', '')
-    cleantext = cleantext.replace('\n', ' ')
+    cleantext = cleantext.replace('\n', '')
     return cleantext
 
 

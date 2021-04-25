@@ -5,6 +5,9 @@
 <meta name="title" content="{{ page.title }}" />
 <meta name="description" content="{{ page.text|strip_text|shorten:150 }}" />
 
+<meta itemprop="title" content="{{ page.title }}" />
+<meta itemprop="description" content="{{ page.text|strip_text|shorten:150 }}" />
+
 <meta property="og:title" content="{{ page.title }}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ request.get_host }}{% url 'page_detail' slug=page.slug %}" />
