@@ -140,6 +140,21 @@ LOGIN_REDIRECT_URL = '/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+MARKDOWNIFY = {
+    'default': {
+        'MARKDOWN_EXTENSIONS': [
+            'markdown.extensions.fenced_code',
+            'markdown.extensions.extra',
+            'markdown.extensions.codehilite',
+            'markdown.extensions.wikilinks'
+        ],
+        "WHITELIST_PROTOCOLS": [
+            'http',
+            'https',
+        ]
+    }
+}
+
 django_heroku.settings(locals())
 
 

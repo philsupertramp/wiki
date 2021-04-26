@@ -2,10 +2,44 @@ import re
 from typing import List, Tuple
 
 import markdown
+from markdown.extensions.wikilinks import WikiLinksInlineProcessor
 from django import template
+from django.urls import reverse
 from difflib import ndiff
 
 register = template.Library()
+
+
+def build_url(label, base, end):
+    clean_label = re.sub(r'([ ]+_)|(_[ ]+)|([ ]+)', '_', label)
+    view, slug = clean_label.split(':')
+
+    name__view__map = {
+        'wiki': 'page_detail'
+    }
+
+    return reverse(name__view__map.get(view), kwargs={'slug': slug})
+
+
+class MyWikiLinkExtension(markdown.extensions.Extension):
+
+    def __init__(self, **kwargs):
+        self.config = {
+            'base_url': ['/', 'String to append to beginning or URL.'],
+            'end_url': ['/', 'String to append to end of URL.'],
+            'html_class': ['wikilink', 'CSS hook. Leave blank for none.'],
+            'build_url': [build_url, 'Callable formats URL from label.'],
+        }
+
+        super().__init__(**kwargs)
+
+    def extendMarkdown(self, md):
+        self.md = md
+        # append to end of inline patterns
+        WIKILINK_RE = r'\[\[\s?(\w+\:?[\w0-9_-]+)\s?\]\]'
+        wikilinkPattern = WikiLinksInlineProcessor(WIKILINK_RE, self.getConfigs())
+        wikilinkPattern.md = md
+        md.inlinePatterns.register(wikilinkPattern, 'wikilink', 75)
 
 
 def get_anchors(value: str) -> List[Tuple[str, int]]:
@@ -27,7 +61,12 @@ def markdown_to_html(value):
     anchors = get_anchors(value)
     out_val = ''
     if isinstance(value, str):
-        out_val = markdown.markdown(value)
+        out_val = markdown.markdown(value, extensions=[
+            'markdown.extensions.fenced_code',
+            'markdown.extensions.extra',
+            'markdown.extensions.codehilite',
+            MyWikiLinkExtension(base_url='/wiki/', build_url=build_url)
+        ])
 
     for anchor in anchors:
         # adds id attributes to headers to enable scrolling in DOM using #title
