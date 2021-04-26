@@ -18,7 +18,9 @@ def build_url(label, base, end):
         'wiki': 'page_detail'
     }
 
-    return reverse(name__view__map.get(view), kwargs={'slug': slug})
+    if view_name := name__view__map.get(view):
+        return reverse(view_name, kwargs={'slug': slug})
+    return ''
 
 
 class MyWikiLinkExtension(markdown.extensions.Extension):
