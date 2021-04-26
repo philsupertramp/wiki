@@ -1,16 +1,45 @@
 import re
+from typing import List, Tuple
 
 import markdown
 from django import template
-from difflib import unified_diff, Differ, HtmlDiff, ndiff
+from difflib import ndiff
 
 register = template.Library()
 
 
+def get_anchors(value: str) -> List[Tuple[str, int]]:
+    pattern = r'^(#{1,6}[ ]*\s*[\S]+)'
+    matches = re.findall(pattern, value, flags=(re.IGNORECASE | re.MULTILINE | re.DOTALL))
+    out = []
+    for match in matches:
+        level = match.count('#')
+        val = match.replace('#', '')
+        while val.startswith(' '):
+            val = val[1:]
+        out.append((val, level))
+
+    return out
+
+
 @register.filter
 def markdown_to_html(value):
+    anchors = get_anchors(value)
+    out_val = ''
     if isinstance(value, str):
-        return markdown.markdown(value)
+        out_val = markdown.markdown(value)
+
+    for anchor in anchors:
+        # adds id attributes to headers to enable scrolling in DOM using #title
+        pattern = r'<h[1-6]{1}>' + anchor[0] + '</h[1-6]{1}>'
+        out_val = re.sub(
+            pattern,
+            f'<h{anchor[1]} id="{anchor[0]}">{anchor[0]}</h{anchor[1]}>',
+            out_val,
+            flags=(re.IGNORECASE | re.DOTALL)
+        )
+
+    return out_val
 
 
 @register.filter
@@ -28,7 +57,11 @@ def gen_diff(a, b):
 @register.filter
 def format_diff(value):
     backslash = "\n"
-    values = [f'<span style="color: {"red" if i.startswith("-") else "green" if (i.startswith("+") or i.startswith("?")) else "black"}">{i[:-1] if i.endswith(backslash) else i}</span><br/>' for i in value.split(backslash)]
+    values = [
+        f'<span style="color: '
+        f'{"red" if i.startswith("-") else "green" if (i.startswith("+") or i.startswith("?")) else "black"}'
+        f'">{i[:-1] if i.endswith(backslash) else i}</span><br/>'
+        for i in value.split(backslash)]
     return ''.join(values)
 
 
@@ -62,6 +95,7 @@ def strip_text(value):
     cleantext = cleantext.replace('*', '')
     cleantext = cleantext.replace('_', '')
     cleantext = cleantext.replace('`', '')
+    cleantext = cleantext.replace('\r', '')
     cleantext = cleantext.replace('\n', '')
     return cleantext
 
