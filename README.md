@@ -7,6 +7,19 @@ Self hosted wiki app, to collect information. One wiki, to know everything and t
 This is a study project and will be used to teach necessary aspects of web dev using Django, hence
 it is not the goal to provide a fully functional production ready platform.
 
+
+## Writing articles
+
+New articles are hosted at https://wiki.godesteem.de/wiki
+
+To create a new page one needs to be authenticated.
+
+The wiki supports markdown, adds syntax-highlighting for most common programming
+languages and is capable of "wikilinks". Full markdown support, with enabled
+`<script>...</script>`-tags, to enable things like mathjax.
+
+
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.

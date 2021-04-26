@@ -49,6 +49,7 @@ def get_anchors(value: str) -> List[Tuple[str, int]]:
     for match in matches:
         level = match.count('#')
         val = match.replace('#', '')
+        val = val.replace('*', '')
         while val.startswith(' '):
             val = val[1:]
         out.append((val, level))
