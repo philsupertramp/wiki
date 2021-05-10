@@ -7,6 +7,7 @@ from pages.models import Page, PageHistory
 
 
 class PageListView(ListView):
+    queryset = Page.objects.filter(is_published=True)
     template_name = 'pages/page_list.html'
     model = Page
     ordering = '-created_at'
