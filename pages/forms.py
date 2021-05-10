@@ -17,7 +17,7 @@ class PageForm(forms.ModelForm):
 
     class Meta:
         model = Page
-        fields = ('title', 'slug', 'text', 'content', 'description')
+        fields = ('title', 'slug', 'text', 'content', 'description', 'is_published')
 
     def save(self, commit=True):
         if self.instance.pk:
