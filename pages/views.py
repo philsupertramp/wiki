@@ -19,7 +19,10 @@ class PageHistoryListView(ListView):
     ordering = '-created_at'
 
     def get_queryset(self):
-        return super().get_queryset().filter(page__slug=self.kwargs.get('slug'))
+        if self.request.user.is_authenticated:
+            return super().get_queryset().filter(page__slug=self.kwargs.get('slug'))
+
+        return super().get_queryset().filter(page__slug=self.kwargs.get('slug'), page__is_published=True)
 
 
 class PageHistoryDetailView(DetailView):
@@ -27,13 +30,28 @@ class PageHistoryDetailView(DetailView):
     model = PageHistory
 
     def get_object(self, queryset=None):
-        return PageHistory.objects.get(pk=self.kwargs.get('pk'))
+        if self.request.user.is_authenticated:
+            return PageHistory.objects.get(pk=self.kwargs.get('pk'))
+        return PageHistory.objects.get(pk=self.kwargs.get('pk'), page__is_published=True)
 
 
 class PageDetailView(DetailView):
     template_name = 'pages/page_detail.html'
     model = Page
     slug_field = 'slug'
+
+    def get_queryset(self):
+        qs = super().get_queryset()
+        if self.request.user.is_authenticated:
+            return qs
+
+        return qs.filter(is_published=True)
+
+    def get_object(self, queryset=None):
+        if self.request.user.is_authenticated:
+            return Page.objects.get(pk=self.kwargs.get('pk'))
+
+        return Page.objects.get(pk=self.kwargs.get('pk'), is_published=True)
 
 
 class PageCreateView(LoginRequiredMixin, CreateView):
