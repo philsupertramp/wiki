@@ -20,7 +20,7 @@ class PageSitemap(Sitemap):
     priority = 0.8
 
     def items(self):
-        return Page.objects.all().order_by('-edited_at')
+        return Page.objects.filter(is_published=True).order_by('-edited_at')
 
     def lastmod(self, obj):
         return obj.edited_at
