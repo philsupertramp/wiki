@@ -1,6 +1,7 @@
 {% extends 'wiki/base.html' %}
 {% load markdown_tags %}
 
+{% if page %}
 {% block header %}
 <meta name="title" content="{{ page.title }}" />
 <meta name="description" content="{{ page.description }}" />
@@ -35,3 +36,5 @@
         {% endif %}
     </div>
 {% endblock %}
+
+{% endif %}

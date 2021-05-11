@@ -1,3 +1,5 @@
+from django.db.models import Q
+from django.shortcuts import get_object_or_404
 from django.views.generic import ListView, DetailView, CreateView, UpdateView
 from django.contrib.auth.mixins import LoginRequiredMixin
 
@@ -31,8 +33,11 @@ class PageHistoryDetailView(DetailView):
 
     def get_object(self, queryset=None):
         if self.request.user.is_authenticated:
-            return PageHistory.objects.get(pk=self.kwargs.get('pk'))
-        return PageHistory.objects.get(pk=self.kwargs.get('pk'), page__is_published=True)
+            obj = PageHistory.objects.filter(pk=self.kwargs.get('pk'))
+            return obj.first() if obj.exists() else None
+        obj = PageHistory.objects.filter(pk=self.kwargs.get('pk'), page__is_published=True)
+
+        return obj.first() if obj.exists() else None
 
 
 class PageDetailView(DetailView):
@@ -49,9 +54,10 @@ class PageDetailView(DetailView):
 
     def get_object(self, queryset=None):
         if self.request.user.is_authenticated:
-            return Page.objects.get(pk=self.kwargs.get('pk'))
+            obj = get_object_or_404(Page, slug=self.kwargs.get('slug'))
+            return obj
 
-        return Page.objects.get(pk=self.kwargs.get('pk'), is_published=True)
+        return get_object_or_404(Page, Q(slug=self.kwargs.get('slug'), is_published=True))
 
 
 class PageCreateView(LoginRequiredMixin, CreateView):
