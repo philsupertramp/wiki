@@ -1,16 +1,10 @@
 from django import forms
 from django.utils import timezone
 from django.utils.text import slugify
-from markdownx.fields import MarkdownxFormField
-from markdownx.widgets import MarkdownxWidget
 
 from mdeditor.fields import MDTextFormField
 
 from pages.models import Page
-
-
-class EditMarkdownxWidget(MarkdownxWidget):
-    template_name = 'markdownx/edit-widget.html'
 
 
 class PageForm(forms.ModelForm):

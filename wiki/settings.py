@@ -51,7 +51,6 @@ INSTALLED_APPS = (
     'elements.apps.ElementsConfig',
     'pages.apps.PagesConfig',
     # third party programs
-    'markdownx',
     'mdeditor',
 )
 

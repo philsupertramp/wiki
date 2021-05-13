@@ -19,7 +19,6 @@ urlpatterns = [
     path(r'admin/', admin.site.urls),
     re_path(r'', include('elements.urls')),
     re_path(r'', include('pages.urls')),
-    re_path(r'^markdownx/', include('markdownx.urls')),
     re_path(r'^mdeditor/', include('mdeditor.urls')),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
 

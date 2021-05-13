@@ -3,7 +3,7 @@
 from django.conf import settings
 from django.db import migrations, models
 import django.db.models.deletion
-import markdownx.models
+import mdeditor.fields
 
 
 class Migration(migrations.Migration):
@@ -25,7 +25,7 @@ class Migration(migrations.Migration):
                 ('is_published', models.BooleanField(default=True)),
                 ('slug', models.SlugField(blank=True, null=True)),
                 ('text', models.TextField(blank=True)),
-                ('content', markdownx.models.MarkdownxField()),
+                ('content', mdeditor.fields.MDTextField()),
                 ('author', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='created_pages', to=settings.AUTH_USER_MODEL)),
                 ('editor', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='edited_pages', to=settings.AUTH_USER_MODEL)),
             ],

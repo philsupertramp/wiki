@@ -1,13 +1,13 @@
 from django.db import models
 from django.utils import timezone
-from markdownx.models import MarkdownxField
+from mdeditor.fields import MDTextField
 
 
 class Post(models.Model):
     author = models.ForeignKey('auth.User', on_delete=models.SET_NULL, null=True)
     title = models.CharField(max_length=255)
     text = models.TextField(blank=True)
-    content = MarkdownxField()
+    content = MDTextField()
     created_date = models.DateTimeField(default=timezone.now)
     edit_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)

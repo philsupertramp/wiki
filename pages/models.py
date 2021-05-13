@@ -5,7 +5,6 @@ from django.db.models import UniqueConstraint, Q
 from django.urls import reverse
 
 from django.utils.text import slugify
-from markdownx.models import MarkdownxField
 from mdeditor.fields import MDTextField
 
 from utils.models import CreatedAtEditedAtModel

@@ -1,10 +1,10 @@
 from django import forms
 from .models import Post, Tag
-from markdownx.fields import MarkdownxFormField
+from mdeditor.fields import MDTextFormField
 
 
 class PostForm(forms.ModelForm):
-    content = MarkdownxFormField()
+    content = MDTextFormField()
 
     class Meta:
         model = Post
