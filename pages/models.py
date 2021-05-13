@@ -6,6 +6,7 @@ from django.urls import reverse
 
 from django.utils.text import slugify
 from markdownx.models import MarkdownxField
+from mdeditor.fields import MDTextField
 
 from utils.models import CreatedAtEditedAtModel
 
@@ -30,7 +31,7 @@ class Page(CreatedAtEditedAtModel):
         related_name='edited_pages'
     )
 
-    content = MarkdownxField()
+    content = MDTextField()
     description = models.CharField('HTML meta:description attribute', default='', max_length=100, null=True)
 
     class Meta:

@@ -4,6 +4,8 @@ from django.utils.text import slugify
 from markdownx.fields import MarkdownxFormField
 from markdownx.widgets import MarkdownxWidget
 
+from mdeditor.fields import MDTextFormField
+
 from pages.models import Page
 
 
@@ -12,7 +14,7 @@ class EditMarkdownxWidget(MarkdownxWidget):
 
 
 class PageForm(forms.ModelForm):
-    content = MarkdownxFormField(widget=EditMarkdownxWidget)
+    content = MDTextFormField()
     user = None
 
     class Meta:

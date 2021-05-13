@@ -52,6 +52,7 @@ INSTALLED_APPS = (
     'pages.apps.PagesConfig',
     # third party programs
     'markdownx',
+    'mdeditor',
 )
 
 MIDDLEWARE = [
@@ -152,6 +153,12 @@ MARKDOWNIFY = {
             'http',
             'https',
         ]
+    }
+}
+
+MDEDITOR_CONFIGS = {
+    'default': {
+        'language': 'en'
     }
 }
 
