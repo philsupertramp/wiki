@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[God esteem tech blog]]></title><description><![CDATA[My personal tech blog.
+I focus on personal challenges and tech oriented topics.]]></description><link>https://wiki.godesteem.de/blog</link><image><url>https://wiki.godesteem.de/blog/logos/logo.png</url><title>God esteem tech blog</title><link>https://wiki.godesteem.de/blog</link></image><generator>GatsbyJS Casper Starter</generator><lastBuildDate>Sun, 16 May 2021 13:40:18 GMT</lastBuildDate><atom:link href="https://wiki.godesteem.de/blog/rss.xml" rel="self" type="application/rss+xml"/><author><![CDATA[Phil]]></author><copyright><![CDATA[Philipp Zettl © 2021]]></copyright><item><title><![CDATA[The break]]></title><description><![CDATA[A big disappointment Hey friend, A few months passed by already and I got to admit that writing the final post of my series about React will…]]></description><link>https://wiki.godesteem.de/blog/the-break</link><guid isPermaLink="false">https://wiki.godesteem.de/blog/the-break</guid><category><![CDATA[stuff]]></category><category><![CDATA[other]]></category><dc:creator><![CDATA[Phil]]></dc:creator><pubDate>Sun, 01 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;a-big-disappointment&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#a-big-disappointment&quot; aria-label=&quot;a big disappointment permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;A big disappointment&lt;/h3&gt;
+&lt;p&gt;Hey friend,&lt;/p&gt;
+&lt;p&gt;A few months passed by already and I got to admit that writing the final post of my series about React will probably take some
+time. Hence I will present you a short FAQ – even though no one seriously asked me these questions.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You told us there will be a new post every week and it&apos;s been already 3 months since the last one. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Sorry, I know that and it&apos;s been a hard time for me, too.&lt;br&gt;
+I needed to &lt;/p&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; find a new flat&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; end the professional relationship with the person I mentioned within (at least) my &lt;a href=&quot;/blog/learning-react-js-the-hard-way-part-1&quot;&gt;first Post of the series&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; study for several exams&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; move into the new flat&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; and over and all earn serious fucking money to afford furniture &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div&gt;&lt;img src=&quot;https://media1.tenor.com/images/fbdfc84e79f650287a44f5a88c472590/tenor.gif?itemid=4864892&quot; style=&quot;width: 90%; margin-left: 5%;margin-bottom: 5rem&quot;&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Are you tired of us as a community? &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h6 id=&quot;obviously-i-am-not-tired-of-the-community-what-kind-of-bad-joke-is-that-tho&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#obviously-i-am-not-tired-of-the-community-what-kind-of-bad-joke-is-that-tho&quot; aria-label=&quot;obviously i am not tired of the community what kind of bad joke is that tho permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Obviously I am not tired of the community, what kind of bad joke is that, tho&lt;/h6&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Did we disappoint you in some way?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h6 id=&quot;and-of-course-you-did-not-disappoint-me-lol&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#and-of-course-you-did-not-disappoint-me-lol&quot; aria-label=&quot;and of course you did not disappoint me lol permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;And of course you did not disappoint me, lol&lt;/h6&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/AmItheAsshole/&quot;&gt;AITA&lt;/a&gt;?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h6 id=&quot;no-iata&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#no-iata&quot; aria-label=&quot;no iata permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;No, IATA&lt;/h6&gt;
+&lt;blockquote&gt;
+&lt;p&gt;So what is going to happen now?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Since I ended the professional relationship with the guy I was spending 90% of my spear time with, I decided to make a huge step back
+regarding tech. I did spent too much time sitting inside, coding and thinking about coding problems.&lt;br&gt;
+Social contacts where only regarding work, which I seriously needed to change.
+The plan is to write a post per month, which seems to be fine for now.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;But why did you do a &quot;short&quot; FAQ instead of finishing your series, which would be way nicer?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Well that isn&apos;t that easy for me, I need some distance from the project which I cannot achieve by continuing the series.
+It seriously ate me. &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Ok, I got the problem, what&apos;s gonna happen now?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I am continuously working on several ideas, which are not yet ready to be presented to the public.
+Needless to say I am still fully in love with tech and especially programming, but for now I can&apos;t work for a visionary anymore without having a plan
+and especially another person which helps me inventing stuff.&lt;br&gt;
+I am still working for a corporate and I am more than happy with that.&lt;/p&gt;
+&lt;p&gt;Also a special thanks to one of my readers which helped me improving this blog a bit by giving helpful and constructive feedback ♥&lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Also: too many GIFs in there! :)&lt;/p&gt;&amp;mdash; Pascal (@lechindianer) &lt;a href=&quot;https://twitter.com/lechindianer/status/1141970012678361088?ref_src=twsrc%5Etfw&quot;&gt;June 21, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;p&gt;As everyone in the startup scene in berlin is saying &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Big things are coming&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Stay tuned my loyal reader!&lt;/p&gt;
+&lt;div style=&quot;width:100%;height:0;padding-bottom:75%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/UaHKJuPIiwSME&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&quot;https://giphy.com/gifs/south-park-UaHKJuPIiwSME&quot;&gt;via GIPHY&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Credits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hero Image &lt;a style=&quot;background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px&quot; href=&quot;https://unsplash.com/@photolozovikov?utm_medium=referral&amp;amp;utm_campaign=photographer-credit&amp;amp;utm_content=creditBadge&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Download free do whatever you want high-resolution photos from Pavel Lozovikov&quot;&gt;&lt;span style=&quot;display:inline-block;padding:2px 3px&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; style=&quot;height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white&quot; viewBox=&quot;0 0 32 32&quot;&gt;&lt;title&gt;unsplash-logo&lt;/title&gt;&lt;path d=&quot;M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;span style=&quot;display:inline-block;padding:2px 3px&quot;&gt;Pavel Lozovikov&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Learning React(JS) the hard way Part 4]]></title><description><![CDATA[Hey there pal, another week another episode of by story on how I learned React(JS) the hard way. Since I never said that before and
+really…]]></description><link>https://wiki.godesteem.de/blog/learning-react-js-the-hard-way-part-4</link><guid isPermaLink="false">https://wiki.godesteem.de/blog/learning-react-js-the-hard-way-part-4</guid><category><![CDATA[stuff]]></category><category><![CDATA[other]]></category><dc:creator><![CDATA[Phil]]></dc:creator><pubDate>Sat, 01 Jun 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hey there pal,&lt;br&gt;
+another week another episode of by story on how I learned React(JS) the hard way. Since I never said that before and
+really want to clarify some things, a short passage before the real article begins.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The following post contains code, which is tested by myself. If you intend to use this piece of software
+feel free to do so. Please be aware that this is by far not production ready and should be reviewed by a person with an
+advanced knowledge of JavaScript. I don&apos;t claim to have this knowledge, neither do I want to transfer you knowledge on how
+to write a specific program nor is this a &quot;How to JavaScript 101&quot;. I intend to tell you a personal and hopefully interesting
+story of my life. And I want to prevent people doing the same mistakes I did.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;One of my biggest problems from the beginning was to decide between packages. I started reading a
+huge pile of blog posts about which package should be used in what some kind of case, but mostly it is opinion based. What I did not know was the fact that there
+could be packages which are better to use on frontend and packages you should definitely not use in your
+frontend application. Sucks, huh? I was searching for an extended Date API. As mentioned in my previous &lt;a href=&quot;/blog/learn-react-js-the-hard-way-part-3&quot;&gt;blog
+post&lt;/a&gt; each of my applications depends on calculating a bunch of dates in different
+units. For example adding 2 years to a date, or to determine if a user is above 18 or not. Basically
+all that stuff we learned in elementary school. But not for computers since they know how to use logical and
+mathematical operators by themselves they decided to drop out of school.&lt;/p&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/l2JdW2IDm9XCwpfRS/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%;margin-bottom: 5rem&quot;&gt;&lt;/div&gt;
+&lt;p&gt;Since I was under a bit of time pressure and needed to get things done fast, I decided to check out several libraries.
+&lt;em&gt;Keep in mind that I started this app literally from zero. No knowledge about how this new JS works and how to use it
+properly.&lt;/em&gt; And got stuck at some fancy ass library called &lt;a href=&quot;https://moment.org&quot;&gt;moment-js&lt;/a&gt;. Spoiler alert, this is a huge
+library and it is able to do way more stuff than I needed. My thoughts about that tended to be super positive. I mean c&apos;mon
+it&apos;s better to have what you don&apos;t need than needing something and don&apos;t have, right?&lt;/p&gt;
+&lt;h3 id=&quot;the-downside&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#the-downside&quot; aria-label=&quot;the downside permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The downside&lt;/h3&gt;
+&lt;p&gt;React is designed to serve a client rendered single page application.&lt;br&gt;
+... Can&apos;t you see it coming?&lt;/p&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/GpFxyI3AIk8es/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%;margin-bottom: 5rem&quot;&gt;&lt;/div&gt;
+&lt;p&gt;Turns out that sending big packages to your client is not so nice as you think!&lt;/p&gt;
+&lt;p&gt;I guess some people are thinking right now&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Why do you stick with a library that does not fulfill your requirements?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Imagine the following scenario:&lt;br&gt;
+Since you are super interested in airplanes you decide to travel on your next vacation by plane,
+it turns out that you&apos;re the only person taking that particular flight, but the
+airline is using an AirBus A380, &quot;Just for you&quot;.&lt;/p&gt;
+&lt;p&gt;Side facts:&lt;br&gt;
+If you deny using this aircraft because of the fact that this aircraft is way too big just for one person,
+you would need to try to take the next airplane with a 99.9% chance of &lt;strong&gt;not&lt;/strong&gt; getting a seat, because this flight is already overbooked.
+Basically you would miss your holiday.&lt;/p&gt;
+&lt;p&gt;Now ask yourself these questions:
+Would you deny your flight?
+Or would you maybe start tearing apart a plane during flight just because you want to know how it works?&lt;/p&gt;
+&lt;p&gt;I know this scenario isn&apos;t as real as mine, I just wanted to put you in the same position in which I was not that long ago.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For those of you who read since &lt;a href=&quot;/blog/learing-react-js-the-hard-way-part-1&quot;&gt;post No. 1&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I know I mentioned in the previous posts that I am working with next-js, so the date calculation could
+take part during the cycle of rendering on server side. The following is just an example, which I still feel more
+comfortable about than using a huge 3rd party package. I can test and adjust the functionality as I want. This
+philosophy is manifested in my mind since I needed to write every single functionality of the software I created during
+assignments and tasks in university.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;One day I came up with a plan, which is straight forward and was the first thing that came to my mind.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I gotta need to replace that flagship!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/g0mzdiXspEFYdH0ojf/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%;margin-bottom: 5rem&quot;&gt;&lt;/div&gt;
+&lt;p&gt;But you can&apos;t kill what you don&apos;t know. And knowing everything about your enemy isn&apos;t bad at all. I mean how else would
+you stalk someone if you don&apos;t know where he is, right? ┬┴┬┴┤(･_├┬┴┬┴&lt;/p&gt;
+&lt;h1 id=&quot;the-plan&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#the-plan&quot; aria-label=&quot;the plan permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The plan&lt;/h1&gt;
+&lt;p&gt;Let&apos;s break it down real quick. All we need to do is&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;determine used functionality&lt;/li&gt;
+&lt;li&gt;create requirements&lt;/li&gt;
+&lt;li&gt;start creating the small package&lt;/li&gt;
+&lt;li&gt;replace only imports&lt;/li&gt;
+&lt;li&gt;fix bugs&lt;/li&gt;
+&lt;li&gt;be happy&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;So all we need to do is replace the currently used package with a self written version just containing the required
+set of features. AWESOME!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I still haven&apos;t written any piece of code with raw JS OOP&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;First things first!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; determine used functionality&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; create requirements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/*
+* Constructors:
+* - new Moment()
+* - new Moment(secondDate, one of [&apos;DD.MM.YYYY&apos;, &apos;YYYY-MM-DD&apos;, &apos;DD.MM.YYYY HH:mm&apos;])
+*
+* Methods:
+*   // diff between two Moment&apos;s
+* - .diff(secondDate, one of [&apos;m&apos;, &apos;d&apos;, &apos;y&apos;, &apos;minute&apos;, &apos;second&apos;, &apos;millisecond&apos;]])
+*   // return in formatted string
+* - .format(one of [&apos;YYYY-MM-DD&apos;, &apos;DD.MM.YYYY&apos;])
+*   // add time unit to obj
+* - .add(number, one of [&apos;m&apos;, &apos;d&apos;, &apos;y&apos;, &apos;minute&apos;, &apos;second&apos;, &apos;millisecond&apos;]])
+*   // determines if obj is valid
+* - .isValid()
+*   // getter for date units
+* - .get(one of [&apos;m&apos;, &apos;d&apos;, &apos;y&apos;, &apos;minute&apos;, &apos;second&apos;, &apos;millisecond&apos;])
+*   // explicit getter for Moment&apos;s weekday (and for real, we need to do it right!)
+* - .weekday()
+*/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; determine used functionality&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; create requirements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I started object oriented programming by being forced to use C++.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Today is &lt;strong&gt;the&lt;/strong&gt; day! I am finally able to announce that I miss C++.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/3o72EUYPgo7D0EXBiE/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%;margin-bottom: 5rem&quot;&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You said you don&apos;t want to bash JS anymore!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;True. Immutability of objects can be gained by 3rd party packages, and there are even some packages which
+give you the ability to override operators. Like &lt;a href=&quot;https://www.npmjs.com/package/immutable&quot;&gt;immutable&lt;/a&gt; and
+&lt;a href=&quot;https://www.npmjs.com/package/operators&quot;&gt;operators&lt;/a&gt;. There&apos;re even some articles on &lt;a href=&quot;http://2ality.com/2011/12/fake-operator-overloading.html&quot;&gt;DYI operator overriding&lt;/a&gt;
+which are damn good and super helpful. But on the other hand, again you depend on 3rd party software and the knowledge of
+people writing articles. Do we really trust them enough to ship production ready code? Do we want our customers
+to may be scammed or having a really bad experience, because the code wasn&apos;t cross platform compatible?
+I may sound like a total moron and I should give more trust in the OS community. But the fact that I keep bumping into
+outdated packages is soooo fucking annoying. For real.&lt;/p&gt;
+&lt;p&gt;Anyway, today I&apos;m gonna start with my class &lt;code class=&quot;language-text&quot;&gt;Moment&lt;/code&gt;&lt;/p&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/t3DDmrHb2jSQE/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%;margin-bottom: 5rem&quot;&gt;&lt;/div&gt;
+&lt;p&gt;Let&apos;s see, I know from React that there&apos;s a keyword &lt;code class=&quot;language-text&quot;&gt;class&lt;/code&gt;, but I also know – from reading &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#Class_declarations&quot;&gt;some&lt;/a&gt;
+&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#Boxing_with_prototype_and_static_methods&quot;&gt;articles&lt;/a&gt;
+– that one can use &lt;code class=&quot;language-text&quot;&gt;function&lt;/code&gt; for classes as well. Still don&apos;t know the difference yet, so I would prefer the &lt;code class=&quot;language-text&quot;&gt;class&lt;/code&gt; version
+of a &lt;strong&gt;class&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Moment&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;There we go. React also introduced me to a constructor of an inherited model, which is obviously called &lt;code class=&quot;language-text&quot;&gt;operator&lt;/code&gt;.
+If you inherit from another class you should add some parameter to get passed to &lt;code class=&quot;language-text&quot;&gt;constructor&lt;/code&gt; and &quot;super&quot;-call them, to
+execute the parent constructor.&lt;/p&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/BdAn5S0xigpO/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%;margin-bottom: 5rem&quot;&gt;&lt;/div&gt;
+&lt;p&gt;Since we don&apos;t inherit and want to have a base class for our purpose we can ignore that.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Moment&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Okay, now we have three requirements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; constructor needs to accept the required parameters.&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; we need either a set of constructors or a compatible constructor for multiple combinations of parameters.&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; the constructor should &lt;strong&gt;use&lt;/strong&gt; the parameter provided in a nice way, so operations will be fast as required.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;First task? easy.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Moment&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;date&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; format&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; operator needs to accept the required parameters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/uMSm9Q0XQLkSQ/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%;margin-bottom: 5rem&quot;&gt;&lt;/div&gt;
+&lt;p&gt;You wish!
+Second task. The docs weren&apos;t saying anything about that, which feels super fucked up... &lt;strong&gt;BUT&lt;/strong&gt; google revealed
+the &lt;a href=&quot;https://stackoverflow.com/a/3220903&quot;&gt;holy grail&lt;/a&gt; which is basically saying one should tell the constructor
+all possible parameters, than handle each combination as needed. &lt;strong&gt;MANUALLY&lt;/strong&gt;.
+At least we stay within our DRY ideology, right?
+&lt;del&gt;I was even reading about a way to &lt;a href=&quot;https://css-tricks.com/understanding-javascript-constructors/#article-header-id-6&quot;&gt;get rid of keyword &lt;code class=&quot;language-text&quot;&gt;new&lt;/code&gt;&lt;/a&gt;.&lt;/del&gt; ²&lt;br&gt;
+Awesome, let&apos;s do it!&lt;/p&gt;
+&lt;p&gt;&lt;a name=&quot;2019-06-09&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;details style=&quot;background-color: #ccc; width: 100%; padding: 0.5rem&quot;&gt;&lt;summary&gt;Before revision&lt;/summary&gt;
+&lt;p&gt;
+&lt;h5 id=&quot;update-2019-06-09&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#update-2019-06-09&quot; aria-label=&quot;update 2019 06 09 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Update 2019-06-09&lt;/h5&gt;
+&lt;p&gt;Unfortunately the &quot;hack&quot; to replace the keyword &lt;code class=&quot;language-text&quot;&gt;new&lt;/code&gt; is not working as expected, hence I removed it. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Moment&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// passing the needed parameters&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;date&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; format&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;// using this fancy hack to replace `new`&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;instanceof&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Moment&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Moment&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;date&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; format&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;¹&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;// handling each type by itself…&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; date &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;undefined&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; format &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;undefined&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; 
+            &lt;span class=&quot;token comment&quot;&gt;// parse date&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; date &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;string&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; format &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;string&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; 
+            &lt;span class=&quot;token comment&quot;&gt;// parse date&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; date &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;object&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; date &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;number&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; 
+            &lt;span class=&quot;token comment&quot;&gt;// parse date&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Construction Error&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Moment&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// passing the needed parameters&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;date&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; format&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;// handling each type by itself…&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; date &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;undefined&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; format &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;undefined&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; 
+            &lt;span class=&quot;token comment&quot;&gt;// parse date&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; date &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;string&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; format &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;string&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; 
+            &lt;span class=&quot;token comment&quot;&gt;// parse date&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; date &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;object&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; date &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;number&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; 
+            &lt;span class=&quot;token comment&quot;&gt;// parse date&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Construction Error&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; we need either a set of constructors or a compatible constructor for multiple combinations of parameters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Wow, I even added a meme...&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Me: passing wrong params to Moment&lt;br&gt;
+Moment: CONSTRUCTION ERROR!!!!!!1!11!&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/bLxrToqfjThYs/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%;margin-bottom: 5rem&quot;&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Not that bad for a first approach, one step left until we can use this rocket.
+Parsing the data is probably the most important thing for a construction, just joking.
+But for real, how to parse it in a nice way to avoid duplication and to use the data as needed?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Moment&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// passing the needed parameters&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;date&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; format&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;// handling each type by itself…&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;// create as today&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; date &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;undefined&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; format &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;undefined&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;date &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;// parse date through string&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; date &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;string&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; format &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;string&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;date &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;date&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;// parse date through Date object &lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;// or number (milliseconds from `new Date().valueOf()`)&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; date &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;object&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; date &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;number&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;date &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;date&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Construction Error&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; the constructor should &lt;strong&gt;use&lt;/strong&gt; the parameter provided.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But wait, that&apos;s shit!&lt;/p&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/dfNYKfFIbI1a0/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%;margin-bottom: 5rem&quot;&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We don&apos;t use format at all, why do we even need it?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It was part of the requirement, &lt;code class=&quot;language-text&quot;&gt;moment&lt;/code&gt;-js parses strings with a format string. I want to keep that to
+minimize the refactoring costs (even though it&apos;s almost nothing).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We can simplify the 2nd and 3rd statement to share one case&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Cheers, mate! That&apos;s some fine idea. I would also remove the test for format, since we don&apos;t care about it at all.
+Another improvement I had in mind was to keep the raw value of a &lt;code class=&quot;language-text&quot;&gt;Date&lt;/code&gt; object, since we are so smart and calculate with
+milliseconds like there&apos;s no tomorrow. Keeping the data type simple to gain performance and built-in features feels
+like a good decision.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Improvement&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Moment&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// passing the needed parameters&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;date&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; format&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;// handling each type by itself…&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; date &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;undefined&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; format &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;undefined&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;date &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; date &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;string&apos;&lt;/span&gt;
+            &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; date &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;object&apos;&lt;/span&gt;
+            &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; date &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;number&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;date &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;date&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Construction Error&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;// parse the value for faster operations&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;date&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;value &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;date&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;valueOf&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/l2YWlvtHGTbawriU0/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%;margin-bottom: 5rem&quot;&gt;&lt;/div&gt;
+&lt;h2 id=&quot;dont-you-hate-me&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#dont-you-hate-me&quot; aria-label=&quot;dont you hate me permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Don&apos;t you hate me?&lt;/h2&gt;
+&lt;p&gt;This series of blog posts turns out to be waaaaay bigger than expected, but I am happy every day to see this blog evolving
+and I am really excited for each visitor on my page.&lt;/p&gt;
+&lt;p&gt;For all of you who are into security and the fact that even in the &quot;free web&quot; you are watched by everyone, I totally get
+the point of protecting your own privacy. This page uses – as you can see within it&apos;s code – Google Analytics.
+(For more information check out the &lt;a href=&quot;/blog/datenschutz&quot;&gt;privacy page&lt;/a&gt;). Which will be
+one of the topic of one of my future posts. But maybe in a way you don&apos;t know it yet. 	(̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄&lt;/p&gt;
+&lt;p&gt;Next week I will continue creating the small date library to get finally rid of 50% of the size of my app! Incredible un-zipped 200kB.&lt;/p&gt;
+&lt;p&gt;Enjoy your weekend &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Catch you on the flip flop!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/TMYtIzAY30BGg/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%;margin-bottom: 5rem&quot;&gt;&lt;/div&gt;
+&lt;p&gt;¹: &lt;a href=&quot;#2019-06-09&quot;&gt;Updated 2019-06-09&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;credits&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#credits&quot; aria-label=&quot;credits permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Credits&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Title image: &lt;a style=&quot;background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px&quot; href=&quot;https://unsplash.com/@jennymarvin?utm_medium=referral&amp;amp;utm_campaign=photographer-credit&amp;amp;utm_content=creditBadge&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Download free do whatever you want high-resolution photos from Jenny Marvin&quot;&gt;&lt;span style=&quot;display:inline-block;padding:2px 3px&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; style=&quot;height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white&quot; viewBox=&quot;0 0 32 32&quot;&gt;&lt;title&gt;unsplash-logo&lt;/title&gt;&lt;path d=&quot;M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;span style=&quot;display:inline-block;padding:2px 3px&quot;&gt;Jenny Marvin&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script&gt;
+$(&apos;.gifplayer&apos;);
+$(&apos;.gifplayer&apos;).gifplayer();
+
+$gifs = $(&apos;.gif&apos;);
+
+$gifs.each(function (i, gif) {
+    $(gif).data(&apos;isPlaying&apos;, false);
+});
+
+
+$(window).scroll(function () {
+    $gifs = $(&apos;.gif&apos;);
+
+    $gifs.each(function (i, gif) {
+        $gif = $(gif);
+
+        if ($gif.visible(true)) {
+            if (!$gif.data(&apos;isPlaying&apos;)) {
+                $gif.find(&apos;.gifplayer&apos;).gifplayer(&apos;play&apos;);
+                $gif.data(&apos;isPlaying&apos;, true);
+            }
+
+            if ($gif.find(&apos;.gp-gif-element&apos;).length &gt; 1) {
+                $gif.find(&apos;.gp-gif-element&apos;).first().remove();
+            }
+        } else {
+            if ($gif.data(&apos;isPlaying&apos;)) {
+                $gif.find(&apos;.gifplayer&apos;).gifplayer(&apos;stop&apos;);
+                $gif.data(&apos;isPlaying&apos;, false);
+                console.log(&apos;Play&apos;)
+            }
+        }
+    });
+});
+&lt;/script&gt;</content:encoded></item><item><title><![CDATA[Learning React(JS) the hard way Part 3]]></title><description><![CDATA[My private package hell (The intro) Oh boy, oh boy. I hope you're as excited as I am! Here a small recap of what we know: React is currently…]]></description><link>https://wiki.godesteem.de/blog/learning-react-js-the-hard-way-part-3</link><guid isPermaLink="false">https://wiki.godesteem.de/blog/learning-react-js-the-hard-way-part-3</guid><category><![CDATA[full-stack]]></category><category><![CDATA[development]]></category><category><![CDATA[stuff]]></category><category><![CDATA[other]]></category><dc:creator><![CDATA[Phil]]></dc:creator><pubDate>Sun, 26 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;my-private-package-hell-the-intro&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#my-private-package-hell-the-intro&quot; aria-label=&quot;my private package hell the intro permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;My private package hell (The intro)&lt;/h2&gt;
+&lt;p&gt;Oh boy, oh boy. I hope you&apos;re as excited as I am!&lt;/p&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/3o7qDWZchVN4R4X5zG/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%;margin-bottom: 5rem&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Here a small recap of what we know:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;React is currently one hell of a popular library for the programming language JavaScript. In the time between May
+2018 and now the monthly amount of downloads increased about 300%. &lt;/p&gt;
+&lt;div style=&quot;margin-bottom: 5rem;&quot;&gt;
+&lt;img src=&quot;/images/npm_stats_react_yearly.png&quot; style=&quot;width: 90%; margin-left: 5%&quot;/&gt;&lt;br/&gt;
+&lt;em style=&quot;margin-left: 5%;&quot;&gt;Downloadstats from &lt;a href=&quot;https://npm-stat.com/charts.html?package=react&quot;&gt;npmjs.org&lt;/a&gt; for the package React&lt;/em&gt;
+&lt;/div&gt;
+&lt;p&gt;React calls itself &lt;em&gt;&quot;A JavaScript library for building user interfaces&quot;&lt;/em&gt;. And at least in my opinion it does a good job
+doing that! During the last weeks I was trying to find reasons not to like JavaScript and React. But every time I open my
+IDE and code for some time, I experience new and awesome stuff which helps me to improve me and my products. Since you&apos;re hopefully here since my
+&lt;a href=&quot;/blog/learning-react-js-the-hard-way-part-1&quot;&gt;first post&lt;/a&gt; in this &quot;series&quot;, you may caught up some sarcastic or ironic vibe.
+Sorry about that, pal. I&apos;ll try to keep it to a minimum &lt;strong&gt;amount&lt;/strong&gt;.&lt;/p&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/TKWteu8wW5PTayafmj/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%;margin-bottom: 5rem&quot;&gt;&lt;/div&gt;
+&lt;p&gt;What keeps me thinking negative about JS is the &lt;strong&gt;amount&lt;/strong&gt; of public available, unmaintained, outdated, unorganized and not well documented packages on their
+package index.&lt;br&gt;
+At the end of my first post I mentioned one of the first problems I&apos;ve faced within my early hours of learning JS.&lt;/p&gt;
+&lt;h4 id=&quot;this-is-what-i-wanted-to-write-before-i-fake-checked-myself&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#this-is-what-i-wanted-to-write-before-i-fake-checked-myself&quot; aria-label=&quot;this is what i wanted to write before i fake checked myself permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;This is what I wanted to write, before I fake checked myself...&lt;/h4&gt;
+&lt;details style=&quot;margin-bottom: 5rem;&quot;&gt;&lt;summary&gt;Click me&lt;/summary&gt;
+&lt;p&gt;
+There&apos;s no such thing as a well implemented built-in date API. Just get used to it. 
+&lt;p&gt;And here&apos;s the deal:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;most of my applications depend on calculations of time&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So I started to develop a routine for me to test a new language or framework to fit my chore requirements.&lt;br&gt;
+Here we are. No built-in date API to calculate with.&lt;/p&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;h4 id=&quot;this-is-actually-true&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#this-is-actually-true&quot; aria-label=&quot;this is actually true permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;This is actually true...&lt;/h4&gt;
+&lt;p&gt;During research for this article I found out I&apos;m able to use the built-in &lt;code class=&quot;language-text&quot;&gt;Date&lt;/code&gt;-API of JS for all the stuff I need, so I
+can finally get rid of one of the biggest packages in my current dependency tree!&lt;/p&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/LFqxF9yF8sRry/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%;margin-bottom: 5rem&quot;&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What&apos;s the problem, I don&apos;t get it?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The idea of my first JS script was to determine date and time in a selected timezone for a specified datetime in the same or another timezone.&lt;/p&gt;
+&lt;p&gt;Basically&lt;br&gt;
+Input:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DateTime /+ Timezone&lt;/li&gt;
+&lt;li&gt;Timezone  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Output:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DateTime&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;My pythonic way is pretty simple. There&apos;s the simple solution, for which the user is responsible of checking the input parameters.
+And the advanced OOP version, which would end in a lot of fun, I swear! Plus for now we don&apos;t need localized formats at all! =D&lt;/p&gt;
+&lt;details style=&quot;margin-bottom: 5rem;&quot;&gt;&lt;summary&gt;short Python example&lt;/summary&gt;
+&lt;p&gt;
+&lt;p&gt;BTW did you ever realize that imports in JS are &lt;code class=&quot;language-text&quot;&gt;import method from &amp;#39;package&amp;#39;&lt;/code&gt; and in Python it&apos;s the opposite order? funky. Confuses me every time!&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python3&quot;&gt;&lt;pre class=&quot;language-python3&quot;&gt;&lt;code class=&quot;language-python3&quot;&gt;import pytz
+from datetime import datetime
+
+def localize_datetime(dt: datetime, tz: str) -&amp;gt; datetime:
+    timezone = pytz.timezone(tz)
+    return timezone.localize(dt)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;: This approach will obviously fail for situations in which the user provides wrong input parameters.&lt;/p&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;But what to do if you&apos;re not familiar with a language and you want to do best practice since day one? You start googleing
+you problems. &lt;/p&gt;
+&lt;p&gt;This became in most situations one of my easiest tasks, research. But for many people it&apos;s still a problem. In the beginning of ones development career, a modern developer,
+is this huge problem of asking the right question. I would love to give some knowledge on how to improve your search queries and how to find good
+quality content. Sadly I&apos;m not quite sure how to do so, but there&apos;re plenty of nice post about peoples experiences and their learning curve on &lt;a href=&quot;https://www.reddit.com/r/learnprogramming/comments/2fmaxp/how_long_was_your_learning_curve/&quot;&gt;reddit&lt;/a&gt;.
+You should seriously check out that link, there are awesome stories!&lt;/p&gt;
+&lt;h4 id=&quot;the-entrance&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#the-entrance&quot; aria-label=&quot;the entrance permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The entrance&lt;/h4&gt;
+&lt;p&gt;Doing research for my script turned out to be a perfect example and my entrance into the package hell. Everyone online recommends to &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;just search for a package at npmjs.org&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/12pMNuLbibieaY/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%;margin-bottom: 5rem&quot;&gt;&lt;/div&gt;
+&lt;p&gt;As mentioned in my &lt;a href=&quot;/blog/learning-react-js-the-hard-way-part-1&quot;&gt;first post&lt;/a&gt;, a search for the packages related to the keyword &quot;time&quot;
+on 12th of May 2019, 24 day before today (26th May 2019), hit 13470 results. Today, we&apos;re at 13597.&lt;/p&gt;
+&lt;div&gt;&lt;img width=&quot;100%&quot; style=&quot;margin: auto;&quot; src=&quot;/images/post-4-time.png&quot;/&gt;&lt;/div&gt;
+&lt;p&gt;Adding 127 packages within three and a half weeks feels a lot of possible bullshit, right?
+Maybe my bullshit detector is broken and I just should give it a try. So I ended up installing and trying several packages.
+Sounds fine so far – at least for me – but what I didn&apos;t expect was to keep record of all the packages I installed
+and never used after I realized that they are not what I was looking for.
+At the end I installed about 10 packages, and &lt;code class=&quot;language-text&quot;&gt;moment.js&lt;/code&gt; was one of them.&lt;/p&gt;
+&lt;p&gt;I thought I found a nice companion for the end of my days. &lt;code class=&quot;language-text&quot;&gt;moment&lt;/code&gt;s usage is awesome, I really like it! No unnecessary crap and imports.
+Clean usage of a nice package &lt;a href=&quot;https://momentjs.com/&quot;&gt;(check it out if you can)&lt;/a&gt;!&lt;br&gt;
+Except the fact that it&apos;s one of the biggest packages I ever worked with. The first build of my first project was about 8.9MB big.
+And I seriously tried to deploy that crap. I didn&apos;t knew better. Didn&apos;t check my dependencies or if I have unused packages and garbage in my code.&lt;br&gt;
+As we germans say, I was green behind my ears.&lt;/p&gt;
+&lt;p&gt;But that was just the beginning.&lt;/p&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/3o6ZtrdYJF3BbgATAI/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%;margin-bottom: 5rem&quot;&gt;&lt;/div&gt;
+&lt;h4 id=&quot;sorry-buddy&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#sorry-buddy&quot; aria-label=&quot;sorry buddy permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Sorry, buddy&lt;/h4&gt;
+&lt;p&gt;Again the time is over.. As every week I thank you for reading my post, I hope you enjoyed it!&lt;br&gt;
+&lt;em&gt;Catch you on a flip flop&lt;/em&gt;. See you in &lt;a href=&quot;/blog/learning-react-js-the-hard-way-part-4&quot;&gt;part 4&lt;/a&gt;! &lt;/p&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/hs8SqOYWARxO8/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%;margin-bottom: 5rem&quot;&gt;&lt;/div&gt;
+Enjoy your weekend
+&lt;p&gt;Phil&lt;/p&gt;
+&lt;h2 id=&quot;credits&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#credits&quot; aria-label=&quot;credits permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Credits&lt;/h2&gt;
+&lt;p&gt;Title image:
+&lt;a style=&quot;background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px&quot; href=&quot;https://unsplash.com/@elifrancis?utm_medium=referral&amp;amp;utm_campaign=photographer-credit&amp;amp;utm_content=creditBadge&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Download free do whatever you want high-resolution photos from Eli Francis&quot;&gt;&lt;span style=&quot;display:inline-block;padding:2px 3px&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; style=&quot;height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white&quot; viewBox=&quot;0 0 32 32&quot;&gt;&lt;title&gt;unsplash-logo&lt;/title&gt;&lt;path d=&quot;M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;span style=&quot;display:inline-block;padding:2px 3px&quot;&gt;Eli Francis&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;sources&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#sources&quot; aria-label=&quot;sources permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Sources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://npm-stat.com/charts.html?package=react&quot;&gt;npmjs download stats React&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Learning React(JS) the hard way Part 2]]></title><description><![CDATA[Hey friend, this is the second part of my small series about me getting introduced to JS.   If you're here by accident and actually wanted…]]></description><link>https://wiki.godesteem.de/blog/learning-react-js-the-hard-way-part-2</link><guid isPermaLink="false">https://wiki.godesteem.de/blog/learning-react-js-the-hard-way-part-2</guid><category><![CDATA[full-stack]]></category><category><![CDATA[development]]></category><dc:creator><![CDATA[Phil]]></dc:creator><pubDate>Sun, 19 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;em&gt;Hey friend, this is the second part of my small series about me getting introduced to JS.&lt;/em&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;If you&apos;re here by accident and actually wanted to read the whole story &lt;a href=&quot;/blog/learning-react-js-the-hard-way-part-1&quot;&gt;click here&lt;/a&gt;.&lt;/em&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;em&gt;If you&apos;re just interested in my first impression of React and you don&apos;t actually care about the background, keep on reading.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a style=&quot;text-decoration: none; cursor: text&quot; target=&quot;_blank&quot; href=&quot;/images/r2-d2-c-3po-best-friends-wallpaper-5478.jpg&quot;&gt;&lt;i&gt;These&lt;/i&gt;&lt;/a&gt; &lt;em&gt;are definitely not the druids you are looking for.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;we-are-definitely-not-close&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#we-are-definitely-not-close&quot; aria-label=&quot;we are definitely not close permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;We are definitely not close&lt;/h2&gt;
+&lt;p&gt;In late 2018 I started working as a python backend developer for a ML driven platform which basically matches future
+employers, so called job candidates with jobs within hours (sometimes a few days).&lt;/p&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/d2YZzTQvyoNYf9YI/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%&quot;&gt;&lt;/div&gt;
+&lt;p&gt;enough ads!&lt;/p&gt;
+&lt;p&gt;During december 2018 my boss introduced me to the idea of being a full stack developer. As far as I remember I said during
+my interview for exact this job position &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Please don&apos;t ask me to do frontend tasks, I hate the accuracy you need to vertical align two divs&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now I hear people saying &quot;Just use the damn &lt;code class=&quot;language-text&quot;&gt;flex-box&lt;/code&gt;, idiot&quot;. But let&apos;s keep to the fact that you have thousands of
+different attributes which can define the exact same state. And it&apos;s just too hard for me to decide whether to use low-level
+attributes like &lt;code class=&quot;language-text&quot;&gt;left&lt;/code&gt; instead of a &lt;code class=&quot;language-text&quot;&gt;margin-left&lt;/code&gt;, or chose &lt;code class=&quot;language-text&quot;&gt;order&lt;/code&gt; because the fancy &lt;code class=&quot;language-text&quot;&gt;flex&lt;/code&gt; gives me purrrrfect alignment.&lt;/p&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/O7FZoSMAgF9f2/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%&quot;&gt;&lt;/div&gt;
+&lt;p&gt;Anyway I didn&apos;t refuse the offer and started learning JavaScript – as mentioned in &lt;a href=&quot;/blog/learning-react-js-the-hard-way-part-1&quot;&gt;my last post&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;which-turns-out-to-be-the-greatest-idea-of-my-whole-life&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#which-turns-out-to-be-the-greatest-idea-of-my-whole-life&quot; aria-label=&quot;which turns out to be the greatest idea of my whole life permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Which turns out to be the greatest idea of my whole life?&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Don&apos;t think so.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Yes, I use JS in multiple projects, since I learned it. But isn&apos;t that just common sense? Why to forget something because
+you don&apos;t like it? Is it the fear of incompatibility with your current tech stack?  &lt;/p&gt;
+&lt;p&gt;For me it was just inconvenient to learn those &quot;silly&quot; languages, as
+&lt;a href=&quot;https://en.wikipedia.org/wiki/C%2B%2B&quot;&gt;C++&lt;/a&gt;,
+&lt;a href=&quot;https://en.wikipedia.org/wiki/C_(programming_language)&quot;&gt;C&lt;/a&gt;,
+&lt;a href=&quot;https://en.wikipedia.org/wiki/R_(programming_language)&quot;&gt;R&lt;/a&gt;,
+&lt;a href=&quot;https://en.wikipedia.org/wiki/MATLAB&quot;&gt;MATLAB&lt;/a&gt;
+and &lt;a href=&quot;https://en.wikipedia.org/wiki/SAS_(software)&quot;&gt;SAS&lt;/a&gt;.
+In my perspective I feel like I&apos;ve traveled a lot through languages and was happily surprised when I dug into Python by
+writing small helpful scripts. To be hones... it&apos;s easy. A few rules to follow and the sky is the limit 🚀.&lt;/p&gt;
+&lt;p&gt;But today I&apos;m here to tell you something about my experience with JavaScript and especially my dear friend &lt;a href=&quot;https://reactjs.org&quot;&gt;ReactJS&lt;/a&gt;.&lt;/p&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/25KEhzwCBBFPb79puo/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%&quot;&gt;&lt;/div&gt;
+&lt;p&gt;After reading through several topics of &quot;&lt;a href=&quot;https://javascript.info/&quot;&gt;The Modern JavaScript Tutorial&lt;/a&gt;&quot;, scripting a few things
+aaaaaaaaand the beautiful support through the fantastic &lt;a href=&quot;https://reactjs.org/tutorial&quot;&gt;Tutorial: Intro to React&lt;/a&gt; I felt
+wise enough to start writing my first small page using react and &lt;a href=&quot;&quot;&gt;nextJS&lt;/a&gt; for SSR support. I also needed to set up an
+express server to achieve SSR support. The schema is a bit different to regular React because of nextjs, but I guess
+you&apos;ll get the gist, since I got it. ;)&lt;/p&gt;
+&lt;p&gt;So I ended up with a directory like that&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/react-1-dir.jpg&quot; alt=&quot;React|NextJS dir&quot;&gt;&lt;/p&gt;
+&lt;p&gt;with my &lt;code class=&quot;language-text&quot;&gt;index.js&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; React &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;react&apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;App&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;React&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Component&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+        &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;h1&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;Hello World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;h1&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+      &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; App&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;and &lt;code class=&quot;language-text&quot;&gt;server.js&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; express &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;express&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; next &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;next&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; port &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;parseInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;env&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;PORT&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3000&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; dev &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;env&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;NODE_ENV&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;production&apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; app &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; dev &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; handle &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getRequestHandler&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+app&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;prepare&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; server &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;express&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  server&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;*&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;req&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; res&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;handle&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;req&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; res&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+  server&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;port&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;err&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;err&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;throw&lt;/span&gt; err
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&gt; Ready on http://localhost:&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;port&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;So I started with my first version of a &quot;Component&quot;, because &lt;strong&gt;components are React&lt;/strong&gt; or is React components? (/•-•)/:&lt;/p&gt;
+&lt;h4 id=&quot;1st-version&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1st-version&quot; aria-label=&quot;1st version permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1st version:&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; React &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;react&apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;MyComponent&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;React&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Component&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+        &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;h1&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;Hello World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;h1&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;  
+      &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; MyComponent&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;2nd-version&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2nd-version&quot; aria-label=&quot;2nd version permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2nd version:&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; React &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;react&apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;MyComponent&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+      &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;h1&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;Hello World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;h1&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;  
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; MyComponent&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;3rd-version&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3rd-version&quot; aria-label=&quot;3rd version permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3rd version:&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; React &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;react&apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;MyComponent&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;h1&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;Hello World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;h1&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;  
+  &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; MyComponent&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;As you can see the evolution of this component is from a
+&quot;&lt;a href=&quot;https://www.robinwieruch.de/react-component-types/#react-class-components&quot;&gt;React Class Component&lt;/a&gt;&quot;
+to a &quot;&lt;a href=&quot;https://www.robinwieruch.de/react-component-types/#react-function-components&quot;&gt;React Functional Component&lt;/a&gt;&quot;.
+Maybe you get my point already, but let&apos;s say we add for example some functionality to our component. Let&apos;s pass a variable
+&quot;&lt;code class=&quot;language-text&quot;&gt;title&lt;/code&gt;&quot; through to display within our &lt;code class=&quot;language-text&quot;&gt;h1&lt;/code&gt;-tag.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;For convenience I continue with version 1 and 2, because 3 is obviously just a shorter version of 2&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;1st-version-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1st-version-1&quot; aria-label=&quot;1st version 1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1st version:&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; React &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;react&apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;MyComponent&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;React&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Component&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+        &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;h1&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;props&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;title&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;h1&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;  
+      &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; MyComponent&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;2nd-version-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2nd-version-1&quot; aria-label=&quot;2nd version 1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2nd version:&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; React &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;react&apos;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;MyComponent&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;title&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+      &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;h1&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;title&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;h1&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;  
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; MyComponent&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The usage of our components is equal, we can use both within &lt;code class=&quot;language-text&quot;&gt;pages/index.js&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt; &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; React &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;react&apos;&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; MyComponent &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;../src/components/MyComponent&apos;&lt;/span&gt;
+ &lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;App&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;React&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Component&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token function&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;     &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;       &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;MyComponent title&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Hello World!&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;     &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;      
+     &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; App&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;
+    &lt;img src=&quot;/post-3/website-1.png&quot;/&gt;&lt;br/&gt;
+    &lt;em&gt;Screenshot of http://127.0.0.1:3000/&lt;/em&gt;
+&lt;/p&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/l0IypeKl9NJhPFMrK/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%&quot;&gt;&lt;/div&gt;
+&lt;h3 id=&quot;incredible-website-i-know&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#incredible-website-i-know&quot; aria-label=&quot;incredible website i know permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Incredible website, I know!&lt;/h3&gt;
+&lt;p&gt;But as you can imagine, this is just one way to do it. There&apos;re several other ways to reach one goal. And different options
+can end in different scenarios. So be careful by choosing the wrong component type! &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Here&apos;s a tip from my side, which might be wrong, but it works pretty good for me. I always start with class components&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;JavaScript and
+especially ReactJS as a framework update their standards so frequently, that I don&apos;t feel super confident
+about big JavaScript projects. But why not trying to keep your code base up to date! In my opinion it&apos;s not a goal to
+refactor your whole project once per year, just because there&apos;s a new fancy way of doing it.
+Why should we change a running system?&lt;/p&gt;
+&lt;p&gt;In that moment most of the people think about the possible options how to use this and how awesome it will be in the future.
+All I can think about is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dude! That wasn&apos;t even 10 minutes and you can basically increase your productivity by quitting to use basic HTML and use
+React even though you&apos;re building a static page. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Reusable Com... Com... &lt;/p&gt;
+&lt;h2 id=&quot;reusable-components&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#reusable-components&quot; aria-label=&quot;reusable components permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reusable Components&lt;/h2&gt;
+&lt;p&gt;Sorry again friend, I need to postpone the topic about packages and libraries for Post #3
+&lt;a href=&quot;/blog/learning-react-js-the-hard-way-part-3&quot;&gt;Learning React(JS) the hard way Part 3&lt;/a&gt;. If you like reading so far and want to
+give me nice feedback hit me per &lt;a href=&quot;mailto:phil@godesteem.de&quot;&gt;Mail&lt;/a&gt; or try to contact me in other known ways.&lt;/p&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/l4FAYTEssy5ux9zlm/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%&quot;&gt;&lt;/div&gt;
+&lt;p&gt;Enjoy your weekend&lt;/p&gt;
+&lt;p&gt;Phil&lt;/p&gt;
+&lt;h4 id=&quot;credits&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#credits&quot; aria-label=&quot;credits permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Credits:&lt;/h4&gt;
+&lt;p&gt;Title Image:
+&lt;a style=&quot;background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px&quot; href=&quot;https://unsplash.com/@gareth_harrison?utm_medium=referral&amp;amp;utm_campaign=photographer-credit&amp;amp;utm_content=creditBadge&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Download free do whatever you want high-resolution photos from Gareth Harrison&quot;&gt;&lt;span style=&quot;display:inline-block;padding:2px 3px&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; style=&quot;height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white&quot; viewBox=&quot;0 0 32 32&quot;&gt;&lt;title&gt;unsplash-logo&lt;/title&gt;&lt;path d=&quot;M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;span style=&quot;display:inline-block;padding:2px 3px&quot;&gt;Gareth Harrison&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learning React(JS) the hard way Part 1]]></title><description><![CDATA[Or  How my code quality started to decrease When I got introduced to ReactJS JavaScript was nothing bigger for me than jQuery and changing…]]></description><link>https://wiki.godesteem.de/blog/learning-react-js-the-hard-way-part-1</link><guid isPermaLink="false">https://wiki.godesteem.de/blog/learning-react-js-the-hard-way-part-1</guid><category><![CDATA[development]]></category><category><![CDATA[stuff]]></category><category><![CDATA[other]]></category><dc:creator><![CDATA[Phil]]></dc:creator><pubDate>Sun, 12 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Or &lt;/p&gt;
+&lt;h1 id=&quot;how-my-code-quality-started-to-decrease&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#how-my-code-quality-started-to-decrease&quot; aria-label=&quot;how my code quality started to decrease permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How my code quality started to decrease&lt;/h1&gt;
+&lt;p&gt;When I got introduced to &lt;a href=&quot;https://reactjs.org&quot;&gt;ReactJS&lt;/a&gt; JavaScript was nothing bigger for me than &lt;em&gt;jQuery&lt;/em&gt; and changing
+some DOM elements using event handlers.&lt;/p&gt;
+&lt;p&gt;To be honest from that point of view there was no explanation how those
+weird HTML files with a super suspicious content like&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token doctype&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;!&lt;/span&gt;&lt;span class=&quot;token doctype-tag&quot;&gt;DOCTYPE&lt;/span&gt; &lt;span class=&quot;token name&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;html&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;lang&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;en&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;title&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Some page title&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;title&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;/bundleA.js&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token script&quot;&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;/bundleB.js&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token script&quot;&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;/bundleC.js&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token script&quot;&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;/bundleD.js&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token script&quot;&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;/bundleE.js&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token script&quot;&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;inject all the content needed for a single page application.&lt;/p&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/8vLrx3xC3xpeYGXXVm/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%&quot;&gt;&lt;/div&gt;
+&lt;p&gt;Well anyway, I guess you get the gist. The current JS was not even close familiar to me. But I was curious so I started
+reading into JS and actually started to like it.&lt;/p&gt;
+&lt;p&gt;One of the tweaks I like in JS is the fact that you&apos;re able to write a small logical statement in a short
+version. For example JS&apos; support for the &lt;code class=&quot;language-text&quot;&gt;?&lt;/code&gt;-operator&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;fizz&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;7&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;buzz&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But my favourite are the arrow functions&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;onscroll&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;NO!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/P0d4NSUbhl6ww/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%&quot;&gt;&lt;/div&gt;&lt;br&gt;
+&lt;h3 id=&quot;but-wait&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#but-wait&quot; aria-label=&quot;but wait permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;But wait!&lt;/h3&gt;
+&lt;p&gt;There&apos;s a &lt;strong&gt;dark&lt;/strong&gt; side. But &lt;code class=&quot;language-text&quot;&gt;dark != bad&lt;/code&gt;, right?&lt;br&gt;
+Or is it &lt;code class=&quot;language-text&quot;&gt;dark !== bad&lt;/code&gt;. I&apos;m not sure.&lt;br&gt;
+Has dark the same type? If so, do I want to compare types?&lt;br&gt;
+Still, I&apos;m confused.&lt;br&gt;
+Let&apos;s try it a different way.&lt;/p&gt;
+&lt;p&gt;Give both &quot;variables&quot; a &lt;em&gt;type&lt;/em&gt;.
+For now we define&lt;br&gt;
+&lt;code class=&quot;language-text&quot;&gt;dark = 0&lt;/code&gt; from type Number and&lt;br&gt;
+&lt;code class=&quot;language-text&quot;&gt;bad = &amp;quot;0&amp;quot;&lt;/code&gt; from type String&lt;/p&gt;
+&lt;p&gt;both receive the value 0, as if we would put each variable on a scale in it&apos;s universe. So the value for dark would be 0 in
+0 to 10, dark to bright and bad receives 0 for 0 to 10, bad to good. Logical, right?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; dark &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; bad &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;0&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; bad &lt;span class=&quot;token operator&quot;&gt;!=&lt;/span&gt; dark
+&lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; bad &lt;span class=&quot;token operator&quot;&gt;!==&lt;/span&gt; dark
+&lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What&apos;s that crappy &lt;code class=&quot;language-text&quot;&gt;!=&lt;/code&gt;? Instead we receive the new born child &lt;code class=&quot;language-text&quot;&gt;!==&lt;/code&gt;.&lt;br&gt;
+The operator which I know since my dawn of programming... gone. &lt;/p&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/Ahtg0hh0edZAs/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%&quot;&gt;&lt;/div&gt;
+&lt;p&gt;I continue studying this operator, keep digging to understand it.&lt;br&gt;
+Digging deeper and deeper, day for day.  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Captain&apos;s log: Half of my crew left my after I introduced the idea of digging deeper into this operator hell. I started to see curious combinations. Once I wanted to understand how the type comparison works for &lt;code class=&quot;language-text&quot;&gt;Object&lt;/code&gt;&apos;s.  I lost the other half of my crew after I tried&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token string&quot;&gt;&quot;object&quot;&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token string&quot;&gt;&quot;object&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img alt=&quot;thinking meme&quot; src=&quot;/images/thinking_meme.jpg&quot; style=&quot;width: 20%; margin-right: 5%&quot;/&gt; HMMMMMMMMMMMMMMMMMMM &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Never mind seems like I search for a reason to hate the language.
+But it could be worse, right?&lt;br&gt;
+Ever heard of &lt;em&gt;libraries/packages&lt;/em&gt;? Awesome shit! &lt;/p&gt;
+&lt;p&gt;Imagine this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You&apos;re thinking about a feature you could add to your codebase, which calculates the correlation of a set of time intervals. The built in JS API &lt;code class=&quot;language-text&quot;&gt;Date&lt;/code&gt; does not give you the full set of features you need to get this job done. You do research for a package or library which supports your required set of features. Since you&apos;re familiar with the beloved package manager &lt;strong&gt;npm&lt;/strong&gt; you know &lt;a href=&quot;https://npmjs.org&quot;&gt;npmjs.org&lt;/a&gt;.  Let&apos;s hit the search. &lt;a href=&quot;https://www.npmjs.com/search?q=time&quot;&gt;...result&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/images/npm_search_time.png&quot; alt=&quot;npm search &amp;#x22;time&amp;#x22;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;1347 search results. Ha! Easy choice, right?  &lt;/p&gt;
+&lt;p&gt;In the next post (&lt;a href=&quot;/blog/learning-react-js-the-hard-way-part-2&quot;&gt;Learning React(JS) the hard way Part 2&lt;/a&gt;)
+I will introduce you to my personal package hell and how I started to learn the &lt;em&gt;real&lt;/em&gt; ReactJS, not JS like today.&lt;/p&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/aq23msctvnd4Y/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%&quot;&gt;&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;See you next week
+Phil&lt;/p&gt;</content:encoded></item><item><title><![CDATA[It begins]]></title><description><![CDATA[Hello fellow reader, my name is Philipp, I am a undergraduate student in a Berlin based university. Since my early teenage years 
+I was…]]></description><link>https://wiki.godesteem.de/blog/it-begins</link><guid isPermaLink="false">https://wiki.godesteem.de/blog/it-begins</guid><category><![CDATA[stuff]]></category><category><![CDATA[other]]></category><dc:creator><![CDATA[Phil]]></dc:creator><pubDate>Sun, 05 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;hello-fellow-reader&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#hello-fellow-reader&quot; aria-label=&quot;hello fellow reader permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hello fellow reader,&lt;/h2&gt;
+&lt;p&gt;my name is Philipp, I am a undergraduate student in a Berlin based university. Since my early teenage years
+I was interested in tech and programming, but spent most of my time playing several MMORPGs like Diablo 2
+and World of Warcraft.
+A few years ago I moved out of my parents place and started studying mathematics in one of the most distant places
+in Germany. During the first years I always told myself to not get to comfortable living here since &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;it&apos;s only for a few years and I&apos;m gonna go back home anyways.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/1X8TXeLwY2ojkQgrOo/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%&quot;&gt;&lt;/div&gt;
+&lt;p&gt;So I &lt;strong&gt;started&lt;/strong&gt; working on several private projects&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a smart home platform to connect all your devices with a local raspberry pi so you can control all your devices through a web interface&lt;/li&gt;
+&lt;li&gt;a social web app (tinder like) where you can swipe for a lunch partner to socialize and explore different restaurants&lt;/li&gt;
+&lt;li&gt;a time management tool to track working times, with scheduling and team management&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;a ml image detection service to detect the species a specific kind of plant&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;including a website to categorize images&lt;/li&gt;
+&lt;li&gt;a coin system to exchange image classifications with manual classified images&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;out of those ideas none ever made it into production.&lt;/p&gt;
+&lt;h2 id=&quot;the-problem&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#the-problem&quot; aria-label=&quot;the problem permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The problem&lt;/h2&gt;
+&lt;p&gt;I love starting but it&apos;s way too hard to finish.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;But why is that so?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;For me the main reason is perfectionism. Every time I end up with my first frontend for an app I&apos;m dissatisfied with
+the result. &lt;/p&gt;
+&lt;div style=&quot;margin: auto&quot;&gt;&lt;img style=&quot;width: 50%; margin-left: 25%;&quot; src=&quot;https://media.giphy.com/media/qiLnXTdWya1Mc/giphy.gif&quot; alt=&quot;deadpool-face&quot;&gt;&lt;/div&gt;
+&lt;p&gt;I&apos;m more of a backend person but saw too many awesome designs and
+functionality, or just a great UX which feels like it will take several hours just to get the basic functionality done.
+So mostly I just stop at a certain point and forget about the project until someone tells me a new live struggling problem
+and I&apos;m back at the beginning of a new project.&lt;/p&gt;
+&lt;h2 id=&quot;the-solution&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#the-solution&quot; aria-label=&quot;the solution permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The solution?&lt;/h2&gt;
+&lt;p&gt;One day a former colleague approached me after he found out I my contract was soon to be expired and I was looking for a
+new job and told me his idea to participate in the shared economy by renting action cams.&lt;/p&gt;
+&lt;p&gt;I like the idea of shared economy and don&apos;t like wasting resources, so he had me at&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Would you like to help me with my website?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;My immediate thought was how awesome the idea is, that it needs to be super easy to implement and of course&lt;/p&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/26BRwW3ckGjcZmsxO/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%&quot;&gt;&lt;/div&gt;
+&lt;h2 id=&quot;from-here&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#from-here&quot; aria-label=&quot;from here permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;From here&lt;/h2&gt;
+&lt;p&gt;Thanks for reading so far, partner!
+During the next weeks I will tell the story of my journey of &lt;a href=&quot;/blog/learning-react-js-the-hard-way-part-1&quot;&gt;Learning React the hard way&lt;/a&gt;,
+&lt;a href=&quot;&quot;&gt;Who needs planning if you have an idea&lt;/a&gt; and &lt;a href=&quot;&quot;&gt;How I stopped quitting&lt;/a&gt;.&lt;/p&gt;
+&lt;div&gt;&lt;img src=&quot;https://media.giphy.com/media/xT4uQgeBiqqIg5Nzry/giphy.gif&quot; style=&quot;width: 90%; margin-left: 5%&quot;&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
