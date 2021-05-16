@@ -12,3 +12,4 @@ staticfiles/
 coverage*
 
 */local_settings.py
+blog/
