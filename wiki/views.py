@@ -20,9 +20,8 @@ def blog_tags(request, path):
 
 
 def blog_home(request):
-    return render(request, f'blog_build/index.html')
+    return render(request, 'blog_build/index.html')
 
 
 def blog_sitemap(request):
-    return render(request, f'blog_build/sitemap.xml')
-
+    return HttpResponse(open(os.path.join(settings.BASE_DIR, 'templates/blog_build/sitemap.xml')).read(), content_type='text/xml')
