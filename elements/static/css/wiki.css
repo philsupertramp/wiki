@@ -106,3 +106,4 @@ section{width:100%; float:left;}
 .footer-link a{color:#A9FD00; font-size:18px; text-transform:uppercase;}
 .text-center{ display: flex; justify-content: center; flex-direction: row; }
 .title { text-align: center; }
+.post-content-section {background-color: #1b1b1b; }
