@@ -80,6 +80,15 @@ class Page(CreatedAtEditedAtModel):
     def get_absolute_url(self):
         return reverse('page_detail', args=[self.slug])
 
+    @property
+    def preview(self):
+        return self.content[:250]
+
+    @property
+    def read_estimate(self):
+        # do some magic
+        return ''
+
 
 class PageHistory(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
