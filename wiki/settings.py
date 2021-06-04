@@ -26,6 +26,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='XXXXX')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+# APPEND_SLASH = False
+
 ALLOWED_HOSTS = [
     '.time-dev.de',
     'localhost',
@@ -118,7 +120,7 @@ MEDIA_URL = '/media/'
 
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_URL = '/static/'
+STATIC_URL = '/blog/static/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (

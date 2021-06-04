@@ -1,4 +1,6 @@
+import os
 from django.contrib.sitemaps import Sitemap
+from django.conf import settings
 from django.urls import reverse
 
 from pages.models import Page
