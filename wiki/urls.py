@@ -25,8 +25,8 @@ urlpatterns = [
     re_path(r'blog/$', blog_home, name='blog-home'),
     re_path(r'blog/tags/(?P<path>[\w\-_]+)$', blog_tags, name='blog-tags'),
     re_path(r'blog/(?P<path>[\w\-_\.\/]+)/$', blog, name='blog'),
-    re_path(r'', include('elements.urls')),
     re_path(r'', include('pages.urls')),
+    re_path(r'', include('elements.urls')),
     re_path(r'^mdeditor/', include('mdeditor.urls')),
 
     # accounting urls
