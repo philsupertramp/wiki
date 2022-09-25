@@ -29,8 +29,8 @@ COPY . /usr/src/app
 # NOTE: Application of security updates is down here so that caching has less of a chance to render it a no-op
 RUN apk update && apk upgrade
 
-EXPOSE 8000
+EXPOSE 8080
 
 ENTRYPOINT ["./entrypoint.sh"]
 
-CMD ["gunicorn", "wiki.wsgi", "-b", "0.0.0.0:8000"]
+CMD ["gunicorn", "wiki.wsgi", "-b", "0.0.0.0:8080"]
