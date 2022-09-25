@@ -96,6 +96,21 @@ DATABASES = {
         'NAME': 'wiki.sqlite3',
     }
 }
+DATABASE_URL = os.environ.get('DATABASE_URL')
+if DATABASE_URL:
+    "DATABASE_URL=postgres://godesteem_wiki:1b4Ozdslm1fnNaT@top2.nearest.of.godesteem-wiki-db.internal:5432/godesteem_wiki"
+    schema, authenticated_url = DATABASE_URL.split('//')
+    username, password_url, port_db = authenticated_url.split(':')
+    password, url = password_url.split('@')
+    port, db = port_db.split('/')
+    DATABASES['default'] = {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': db,
+        'USER': username,
+        'PASSWORD': password,
+        'HOST': url,
+        'PORT': port
+    }
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
