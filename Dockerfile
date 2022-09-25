@@ -33,4 +33,4 @@ EXPOSE 8000
 
 ENTRYPOINT ["./entrypoint.sh"]
 
-CMD ["gunicorn", "wiki.wsgi"]
+CMD ["gunicorn", "wiki.wsgi", "-b", "0.0.0.0:8000"]
