@@ -7,6 +7,7 @@ wikienv
 
 .idea/
 staticfiles/
+static/
 
 .coverage*
 coverage*

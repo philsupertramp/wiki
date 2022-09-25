@@ -28,6 +28,7 @@ DEBUG_PROPAGATE_EXCEPTIONS = True
 
 ALLOWED_HOSTS = [
     '.time-dev.de',
+    '.godesteem.de',
     'localhost',
     '*',
     '127.0.0.1:*',

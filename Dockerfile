@@ -29,8 +29,8 @@ COPY . /usr/src/app
 # NOTE: Application of security updates is down here so that caching has less of a chance to render it a no-op
 RUN apk update && apk upgrade
 
-RUN python manage.py collectstatic --no-input
-
 EXPOSE 8000
+
+ENTRYPOINT ["./entrypoint.sh"]
 
 CMD ["gunicorn", "wiki.wsgi"]
