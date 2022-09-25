@@ -31,4 +31,4 @@ RUN apk update && apk upgrade
 
 EXPOSE 8000
 
-CMD ["bash", "-i"]
+CMD ["gunicorn", "wiki.wsgi"]
