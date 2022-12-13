@@ -2,7 +2,7 @@ asgiref==3.5.2
 certifi==2022.12.7
 chardet==5.1.0
 charset-normalizer==2.1.1
-dj-database-url==1.1.0
+dj-database-url==1.2.0
 Django==3.2.16
 django-mdeditor==0.1.20
 django-middleware-global-request==0.3.1
