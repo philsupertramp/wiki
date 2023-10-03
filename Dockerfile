@@ -1,4 +1,4 @@
-FROM python:3.12-alpine
+FROM python:3.11-alpine
 
 # unbuffered logging for stdout -> cloudwatch
 ENV PYTHONUNBUFFERED 1
