@@ -9,7 +9,7 @@ django-middleware-global-request==0.3.3
 gunicorn==21.2.0
 idna==3.4
 importlib-metadata==6.8.0
-Markdown==3.4.4
+Markdown==3.5
 Pillow==10.0.1
 psycopg2-binary==2.9.9
 Pygments==2.16.1
