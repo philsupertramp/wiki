@@ -134,12 +134,12 @@ MEDIA_URL = '/media/'
 
 
 STATIC_ROOT = './static'
-STATIC_URL = '/blog/static/'
+STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-    # os.path.join(BASE_DIR, 'staticfiles'),
-    os.path.join(BASE_DIR, 'templates/blog_build'),
+    os.path.join(BASE_DIR, 'staticfiles'),
+    #os.path.join(BASE_DIR, 'templates/blog_build'),
 )
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 WHITENOISE_MANIFEST_STRICT = False
