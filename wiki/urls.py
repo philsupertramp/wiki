@@ -6,7 +6,6 @@ from elements import views as elements_views
 from wiki.sitemaps import StaticSitemap, PageSitemap
 from django.contrib.sitemaps.views import sitemap
 
-from wiki.views import blog_home, blog, blog_tags, blog_sitemap
 
 sitemaps = {
     'static': StaticSitemap,
@@ -19,12 +18,8 @@ urlpatterns = [
     # url(r'^blog/', include('blog.urls')),
 
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
-    path('blog/sitemap.xml', blog_sitemap),
 
     path(r'admin/', admin.site.urls),
-    re_path(r'blog/$', blog_home, name='blog-home'),
-    re_path(r'blog/tags/(?P<path>[\w\-_]+)$', blog_tags, name='blog-tags'),
-    re_path(r'blog/(?P<path>[\w\-_\.\/]+)/$', blog, name='blog'),
     re_path(r'', include('pages.urls')),
     re_path(r'', include('elements.urls')),
     re_path(r'^mdeditor/', include('mdeditor.urls')),
