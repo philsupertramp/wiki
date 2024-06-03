@@ -10,8 +10,6 @@ it is not the goal to provide a fully functional production ready platform.
 
 ## Writing articles
 
-New articles are hosted at https://wiki.godesteem.de/wiki
-
 To create a new page one needs to be authenticated.
 
 The wiki supports markdown, adds syntax-highlighting for most common programming
