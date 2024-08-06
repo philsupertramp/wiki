@@ -10,7 +10,7 @@ gunicorn==22.0.0
 idna==3.7
 importlib-metadata==7.2.1
 Markdown==3.6
-Pillow==10.3.0
+Pillow==10.4.0
 psycopg2-binary==2.9.9
 Pygments==2.18.0
 python-dateutil==2.9.0.post0
